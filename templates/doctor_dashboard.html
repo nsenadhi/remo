@@ -1,0 +1,342 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doctor Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='doctor_dashboard/assets/index-Dul_Az2d.css') }}?v=20260206-01" />
+    <style>
+      .chatbox-btn-badge {
+        position: relative;
+      }
+      .chatbox-badge {
+        position: absolute;
+        top: -6px;
+        right: -6px;
+        background: #dc2626;
+        color: #fff;
+        border-radius: 999px;
+        padding: 2px 6px;
+        font-size: 10px;
+        font-weight: 700;
+        line-height: 1;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        display: none;
+      }
+      input[type="date"]::-webkit-calendar-picker-indicator {
+        opacity: 0;
+        display: none;
+      }
+      input[type="date"] {
+        background-image: none;
+        width: 110px;
+        text-align: center;
+        padding-left: 6px;
+      }
+      /* Status column hidden via component layout */
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script>
+      window.REMONI_PATIENTS = {{ patients|tojson }};
+      window.REMONI_PATIENT_DETAILS = {{ patient_details|tojson }};
+      window.REMONI_PRELOAD = {{ preload|tojson }};
+    </script>
+    <script src="https://cdn.socket.io/4.4.1/socket.io.min.js"></script>
+    <script type="module" crossorigin src="{{ url_for('static', filename='doctor_dashboard/assets/index-D8LSocZS.js') }}?v=20260206-01"></script>
+    <script>
+      window.handleLogout = function () {
+        window.location.href = "{{ url_for('logout') }}";
+      };
+    </script>
+    <script>
+      window.addEventListener('load', () => {
+        const dateInput = document.querySelector('input[type="date"]');
+        if (dateInput && dateInput.parentElement) {
+          dateInput.parentElement.style.cursor = 'pointer';
+          dateInput.parentElement.addEventListener('click', () => {
+            if (typeof dateInput.showPicker === 'function') {
+              dateInput.showPicker();
+            } else {
+              dateInput.focus();
+            }
+          });
+        }
+      });
+    </script>
+    <script>
+      (function () {
+        const role = "doctor";
+        const patientId = "00001";
+
+        function forceChatboxTarget() {
+          const buttons = Array.from(document.querySelectorAll("button, a, [role='button']"));
+          const btn = buttons.find(b => b.textContent && b.textContent.trim() === "Chatbox");
+          if (btn) {
+            btn.onclick = (event) => {
+              if (event) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              window.location.href = "/doctor/chats?chat=remoni&return=" + encodeURIComponent("/doctor");
+            };
+          }
+        }
+
+        function findChatButton() {
+          const buttons = Array.from(document.querySelectorAll("button, a, [role='button']"));
+          return buttons.find(btn => btn.textContent && btn.textContent.trim() === "Chatbox");
+        }
+
+        document.addEventListener("click", (event) => {
+          const target = event.target;
+          if (!target) return;
+          let node = target;
+          while (node && node !== document.body) {
+            if (node.textContent && node.textContent.trim() === "Chatbox") {
+              try {
+                sessionStorage.setItem("chat_return", window.location.href);
+              } catch {}
+              event.preventDefault();
+              event.stopPropagation();
+              window.location.href = "/doctor/chats?chat=remoni&return=" + encodeURIComponent("/doctor");
+              return;
+            }
+            node = node.parentElement;
+          }
+        }, true);
+
+        function ensureBadge(button) {
+          if (!button) return null;
+          if (!button.classList.contains("chatbox-btn-badge")) {
+            button.classList.add("chatbox-btn-badge");
+          }
+          let badge = button.querySelector(".chatbox-badge");
+          if (!badge) {
+            badge = document.createElement("span");
+            badge.className = "chatbox-badge";
+            button.appendChild(badge);
+          }
+          return badge;
+        }
+
+        function parseMsgTime(msg) {
+          const dt = new Date(`${msg.date || ""} ${msg.timestamp || ""}`);
+          return isNaN(dt.getTime()) ? null : dt;
+        }
+
+        async function updateUnread(badge) {
+          if (!badge) return;
+          try {
+            const res = await fetch(`/api/chatroom/messages?patient_id=${patientId}`);
+            if (!res.ok) return;
+            const data = await res.json();
+            const messages = data && data.messages ? data.messages : [];
+            let lastSeen = null;
+            try {
+              const stored = localStorage.getItem(`chatroom_last_seen_${role}_${patientId}`);
+              if (stored) {
+                const dt = new Date(stored);
+                if (!isNaN(dt.getTime())) lastSeen = dt;
+              }
+            } catch {}
+
+            let count = 0;
+            for (const msg of messages) {
+              if (!msg || msg.sender === role) continue;
+              const dt = parseMsgTime(msg);
+              if (!dt) continue;
+              if (lastSeen && dt <= lastSeen) continue;
+              count += 1;
+            }
+            try {
+              const raw = localStorage.getItem("remoni_unread_doctor");
+              const remoniCount = raw ? parseInt(raw, 10) : 0;
+              if (Number.isFinite(remoniCount)) count += remoniCount;
+            } catch {}
+
+            if (count > 0) {
+              badge.textContent = count > 99 ? "99+" : String(count);
+              badge.style.display = "inline-block";
+            } else {
+              badge.style.display = "none";
+            }
+          } catch (e) {
+            console.error("Unread badge error:", e);
+          }
+        }
+
+        const interval = setInterval(() => {
+          const btn = findChatButton();
+          const badge = ensureBadge(btn);
+          forceChatboxTarget();
+          if (badge) {
+            updateUnread(badge);
+          }
+        }, 2000);
+
+        setTimeout(() => clearInterval(interval), 20000);
+
+        setInterval(() => {
+          const btn = findChatButton();
+          const badge = ensureBadge(btn);
+          forceChatboxTarget();
+          if (badge) updateUnread(badge);
+        }, 10000);
+
+      })();
+    </script>
+    <script>
+      (function () {
+        function injectDoctorProfileButton() {
+          const buttons = Array.from(document.querySelectorAll("button, a, [role='button']"));
+          const logoutBtn = buttons.find(b => b.textContent && b.textContent.trim() === "Logout");
+          if (!logoutBtn || !logoutBtn.parentElement || document.getElementById("doctor-profile-btn")) return;
+
+          const btn = document.createElement("button");
+          btn.id = "doctor-profile-btn";
+          btn.className = logoutBtn.className || "flex items-center gap-2 bg-white/10 hover:bg-white/20 px-4 py-2 rounded-lg transition-colors font-bold";
+          btn.innerHTML = "<span>Doctor Profile</span>";
+          btn.addEventListener("click", (event) => {
+            event.preventDefault();
+            window.location.href = "/doctor/profile";
+          });
+          logoutBtn.parentElement.insertBefore(btn, logoutBtn);
+        }
+
+        function detectPatientView() {
+          const buttons = Array.from(document.querySelectorAll("button, a, [role='button']"));
+          const hasBack = buttons.some(b => b.textContent && b.textContent.trim() === "Back");
+          if (hasBack) {
+            try {
+              sessionStorage.setItem("doctor_in_patient_view", "1");
+            } catch {}
+          } else {
+            try {
+              sessionStorage.removeItem("doctor_in_patient_view");
+            } catch {}
+          }
+        }
+
+        function injectWeeklyAnalysisButton() {
+          let inPatientView = false;
+          try {
+            inPatientView = sessionStorage.getItem("doctor_in_patient_view") === "1";
+          } catch {}
+          if (!inPatientView) {
+            const existing = document.getElementById("weekly-analysis-btn");
+            if (existing) existing.remove();
+            return;
+          }
+
+          const buttons = Array.from(document.querySelectorAll("button, a, [role='button']"));
+          const chatBtn = buttons.find(b => b.textContent && b.textContent.trim() === "Chatbox");
+          if (!chatBtn || !chatBtn.parentElement) return;
+          if (document.getElementById("weekly-analysis-btn")) return;
+
+          const btn = document.createElement("button");
+          btn.id = "weekly-analysis-btn";
+          btn.className = chatBtn.className || "flex items-center gap-2 bg-white/10 hover:bg-white/20 px-4 py-2 rounded-lg transition-colors font-semibold";
+
+          const label = document.createElement("span");
+          label.textContent = "Weekly Analysis";
+          btn.appendChild(label);
+
+          const patientInfo = (() => {
+            let id = "";
+            let name = "";
+            const textNodes = Array.from(document.querySelectorAll("h1, p, span, div")).map(n => n.textContent || "");
+            for (const t of textNodes) {
+              if (!id && /Patient ID:\s*/i.test(t)) {
+                id = t.replace(/.*Patient ID:\s*/i, "").trim();
+              }
+              if (!name && /Weekly Analysis -/i.test(t)) {
+                name = t.replace(/.*Weekly Analysis -/i, "").trim();
+              }
+            }
+            return { id, name };
+          })();
+
+          btn.addEventListener("click", (event) => {
+            if (event) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            const params = new URLSearchParams();
+            if (patientInfo.id) params.set("patient_id", patientInfo.id);
+            if (patientInfo.name) params.set("patient_name", patientInfo.name);
+            const qs = params.toString();
+            window.location.href = "/weekly-analysis/" + (qs ? `?${qs}` : "");
+          });
+
+          chatBtn.parentElement.insertBefore(btn, chatBtn.nextSibling);
+        }
+
+        document.addEventListener("click", (event) => {
+          const target = event.target;
+          if (!target) return;
+          let node = target;
+          while (node && node !== document.body) {
+            if (node.textContent && node.textContent.trim() === "Back") {
+              event.preventDefault();
+              event.stopPropagation();
+              try {
+                const inPatientView = sessionStorage.getItem("doctor_in_patient_view") === "1";
+                if (inPatientView) {
+                  sessionStorage.removeItem("doctor_in_patient_view");
+                  window.location.href = "/doctor";
+                  return;
+                }
+              } catch {}
+              const params = new URLSearchParams(window.location.search);
+              if (params.get("patient_id")) {
+                window.location.href = "/doctor";
+              } else {
+                window.history.back();
+              }
+              return;
+            }
+            node = node.parentElement;
+          }
+        }, true);
+
+        document.addEventListener("click", (event) => {
+          const target = event.target;
+          if (!target) return;
+          let node = target;
+          while (node && node !== document.body) {
+            if (node.textContent && node.textContent.trim() === "Go to Patient Dashboard") {
+              try {
+                sessionStorage.setItem("doctor_in_patient_view", "1");
+              } catch {}
+              return;
+            }
+            if (node.textContent && node.textContent.trim() === "Go") {
+              try {
+                sessionStorage.setItem("doctor_in_patient_view", "1");
+              } catch {}
+              return;
+            }
+            node = node.parentElement;
+          }
+        }, true);
+
+        function tick() {
+          injectDoctorProfileButton();
+          detectPatientView();
+          injectWeeklyAnalysisButton();
+        }
+
+        window.addEventListener("load", tick);
+        tick();
+
+        const observer = new MutationObserver(() => {
+          tick();
+        });
+        observer.observe(document.body, { childList: true, subtree: true });
+      })();
+    </script>
+  </body>
+</html>

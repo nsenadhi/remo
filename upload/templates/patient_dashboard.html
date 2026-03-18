@@ -1,0 +1,429 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Patient Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='patient_dashboard/assets/index-dY5CpRzN.css') }}?v=20260206-01" />
+    <style>
+      .fall-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.45);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+      }
+      .fall-modal {
+        background: #fff;
+        border-radius: 12px;
+        width: min(520px, 92vw);
+        padding: 18px 20px;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+        border: 1px solid #f1c6c6;
+      }
+      .fall-title {
+        font-weight: 700;
+        font-size: 16px;
+        color: #b91c1c;
+        margin-bottom: 6px;
+      }
+      .fall-msg {
+        font-size: 14px;
+        color: #111827;
+        white-space: pre-line;
+      }
+      .fall-actions {
+        display: flex;
+        gap: 10px;
+        margin-top: 14px;
+        justify-content: flex-end;
+      }
+      .fall-btn {
+        border: 0;
+        border-radius: 8px;
+        padding: 8px 12px;
+        font-size: 13px;
+        cursor: pointer;
+      }
+      .fall-btn-ok {
+        background: #16a34a;
+        color: #fff;
+      }
+      .fall-btn-help {
+        background: #dc2626;
+        color: #fff;
+      }
+      .doctor-chat-request {
+        position: fixed;
+        right: 16px;
+        bottom: 16px;
+        background: #dc2626;
+        color: #fff;
+        padding: 10px 14px;
+        border-radius: 10px;
+        font-weight: 700;
+        font-size: 13px;
+        box-shadow: 0 10px 24px rgba(0,0,0,0.25);
+        cursor: pointer;
+        z-index: 9998;
+        display: none;
+        animation: pulseBlink 1.2s infinite;
+      }
+      @keyframes pulseBlink {
+        0% { opacity: 1; box-shadow: 0 0 0 rgba(220,38,38,0.6); }
+        50% { opacity: 0.4; box-shadow: 0 0 12px rgba(220,38,38,0.9); }
+        100% { opacity: 1; box-shadow: 0 0 0 rgba(220,38,38,0.6); }
+      }
+      .chatbox-btn-badge {
+        position: relative;
+      }
+      .chatbox-badge {
+        position: absolute;
+        top: -6px;
+        right: -6px;
+        background: #dc2626;
+        color: #fff;
+        border-radius: 999px;
+        padding: 2px 6px;
+        font-size: 10px;
+        font-weight: 700;
+        line-height: 1;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <div id="doctorChatRequest" class="doctor-chat-request">Doctor wants to chat — Tap to open</div>
+    <div id="fallChatRequest" class="doctor-chat-request">Fall detected — Tap to open chat</div>
+
+    <script>
+      window.REMONI_PATIENT = {{ patient|tojson }};
+      window.REMONI_PATIENTS = [];
+      window.REMONI_PATIENT_DETAILS = {{ patient_details|tojson }};
+      window.REMONI_PRELOAD = {{ preload|tojson }};
+    </script>
+    <script src="https://cdn.socket.io/4.4.1/socket.io.min.js"></script>
+    <script type="module" crossorigin src="{{ url_for('static', filename='patient_dashboard/assets/index-C1chc4KP.js') }}?v=20260206-01"></script>
+    <script>
+      window.handleLogout = function () {
+        window.location.href = "{{ url_for('logout') }}";
+      };
+    </script>
+    <script>
+      (function () {
+        const role = "patient";
+        const patientId = (window.REMONI_PATIENT && window.REMONI_PATIENT.id) ? window.REMONI_PATIENT.id : "00001";
+        function forceChatboxTarget() {
+          const buttons = Array.from(document.querySelectorAll("button"));
+          const btn = buttons.find(b => b.textContent && b.textContent.trim() === "Chatbox");
+          if (btn) {
+            btn.onclick = () => { window.location.href = "/patient/chat"; };
+          }
+        }
+
+        function findChatButton() {
+          const buttons = Array.from(document.querySelectorAll("button"));
+          return buttons.find(btn => btn.textContent && btn.textContent.trim() === "Chatbox");
+        }
+
+        function ensureBadge(button) {
+          if (!button) return null;
+          if (!button.classList.contains("chatbox-btn-badge")) {
+            button.classList.add("chatbox-btn-badge");
+          }
+          let badge = button.querySelector(".chatbox-badge");
+          if (!badge) {
+            badge = document.createElement("span");
+            badge.className = "chatbox-badge";
+            button.appendChild(badge);
+          }
+          return badge;
+        }
+
+        function parseMsgTime(msg) {
+          const dt = new Date(`${msg.date || ""} ${msg.timestamp || ""}`);
+          return isNaN(dt.getTime()) ? null : dt;
+        }
+
+        async function updateUnread(badge) {
+          if (!badge) return;
+          try {
+            const res = await fetch(`/api/chatroom/messages?patient_id=${patientId}`);
+            if (!res.ok) return;
+            const data = await res.json();
+            const messages = data && data.messages ? data.messages : [];
+            let lastSeen = null;
+            try {
+              const stored = localStorage.getItem(`chatroom_last_seen_${role}_${patientId}`);
+              if (stored) {
+                const dt = new Date(stored);
+                if (!isNaN(dt.getTime())) lastSeen = dt;
+              }
+            } catch {}
+
+            let count = 0;
+            for (const msg of messages) {
+              if (!msg || msg.sender === role) continue;
+              const dt = parseMsgTime(msg);
+              if (!dt) continue;
+              if (lastSeen && dt <= lastSeen) continue;
+              count += 1;
+            }
+
+            if (count > 0) {
+              badge.textContent = count > 99 ? "99+" : String(count);
+              badge.style.display = "inline-block";
+            } else {
+              badge.style.display = "none";
+            }
+          } catch (e) {
+            console.error("Unread badge error:", e);
+          }
+        }
+
+        const interval = setInterval(() => {
+          const btn = findChatButton();
+          const badge = ensureBadge(btn);
+          forceChatboxTarget();
+          if (badge) {
+            updateUnread(badge);
+          }
+        }, 2000);
+
+        setTimeout(() => clearInterval(interval), 20000);
+
+        setInterval(() => {
+          const btn = findChatButton();
+          const badge = ensureBadge(btn);
+          forceChatboxTarget();
+          if (badge) updateUnread(badge);
+        }, 10000);
+      })();
+    </script>
+    <script>
+      (function () {
+        let activeOverlay = null;
+        let lastAlertId = null;
+        let chatRequestVisible = false;
+        let fallRequestVisible = false;
+
+        function closeOverlay() {
+          if (activeOverlay) {
+            activeOverlay.remove();
+            activeOverlay = null;
+          }
+        }
+
+        function showFallPopup(data) {
+          if (!data || !data.alert_id) {
+            return;
+          }
+          if (lastAlertId === data.alert_id && activeOverlay) {
+            return;
+          }
+          lastAlertId = data.alert_id;
+          closeOverlay();
+
+          const overlay = document.createElement("div");
+          overlay.className = "fall-overlay";
+
+          const modal = document.createElement("div");
+          modal.className = "fall-modal";
+          modal.innerHTML = `
+            <div class="fall-title">Fall Detection Alert</div>
+            <div class="fall-msg">We detected unusual movement (Confidence: ${data.confidence || 0}%).\nAre you okay?</div>
+            <div class="fall-actions">
+              <button class="fall-btn fall-btn-ok">I'm OK</button>
+              <button class="fall-btn fall-btn-help">Need Help</button>
+            </div>
+          `;
+
+          overlay.appendChild(modal);
+          document.body.appendChild(overlay);
+          activeOverlay = overlay;
+
+          const okBtn = modal.querySelector(".fall-btn-ok");
+          const helpBtn = modal.querySelector(".fall-btn-help");
+
+          const sendResponse = async (response) => {
+            try {
+              await fetch("/patient_fall_response", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                  alert_id: data.alert_id,
+                  response: response
+                })
+              });
+            } catch (e) {
+              console.error("Failed to send fall response:", e);
+            } finally {
+              closeOverlay();
+              hideFallChatRequest();
+            }
+          };
+
+          okBtn.addEventListener("click", () => sendResponse("ok"));
+          helpBtn.addEventListener("click", () => sendResponse("help"));
+        }
+
+        function showDoctorChatRequest(requestId, patientId) {
+          const el = document.getElementById("doctorChatRequest");
+          if (!el) return;
+          chatRequestVisible = true;
+          el.dataset.requestId = requestId || "";
+          el.dataset.patientId = patientId || "";
+          el.style.display = "block";
+        }
+
+        function hideDoctorChatRequest() {
+          const el = document.getElementById("doctorChatRequest");
+          if (!el) return;
+          chatRequestVisible = false;
+          el.style.display = "none";
+        }
+
+        function showFallChatRequest(alertId) {
+          const el = document.getElementById("fallChatRequest");
+          if (!el) return;
+          fallRequestVisible = true;
+          el.dataset.alertId = alertId || "";
+          el.style.display = "block";
+        }
+
+        function hideFallChatRequest() {
+          const el = document.getElementById("fallChatRequest");
+          if (!el) return;
+          fallRequestVisible = false;
+          el.style.display = "none";
+        }
+
+        async function pollPendingFall() {
+          try {
+            const res = await fetch("/api/pending_fall_check", {
+              method: "GET",
+              headers: { "Content-Type": "application/json", "Cache-Control": "no-cache" }
+            });
+            if (!res.ok) return;
+            const data = await res.json();
+            if (data && data.pending) {
+              showFallPopup(data.pending);
+              showFallChatRequest(data.pending.alert_id);
+            } else if (fallRequestVisible) {
+              hideFallChatRequest();
+            }
+          } catch (e) {
+            console.error("Pending fall check error:", e);
+          }
+        }
+
+        try {
+          const socket = io({
+            transports: ["websocket", "polling"],
+            reconnection: true,
+            reconnectionDelay: 1000,
+            reconnectionAttempts: 5
+          });
+
+          socket.on("fall_check", (data) => {
+            if (data && data.for_role && data.for_role !== "patient") {
+              return;
+            }
+            const patientId = window.REMONI_PATIENT && window.REMONI_PATIENT.id ? window.REMONI_PATIENT.id : null;
+            if (data && data.patient_id && patientId && String(data.patient_id) !== String(patientId)) {
+              return;
+            }
+            showFallPopup(data);
+            showFallChatRequest(data.alert_id);
+          });
+
+          socket.on("doctor_request", (data) => {
+            const patientId = window.REMONI_PATIENT && window.REMONI_PATIENT.id ? window.REMONI_PATIENT.id : null;
+            if (data && data.patient_id && patientId && String(data.patient_id) !== String(patientId)) {
+              return;
+            }
+            showDoctorChatRequest(data.id, patientId);
+          });
+        } catch (e) {
+          console.error("Socket init failed:", e);
+        }
+
+        pollPendingFall();
+        setInterval(pollPendingFall, 10000);
+
+        // Poll pending doctor requests (fallback if socket missed)
+        const pollDoctorRequests = async () => {
+          try {
+            const patientId = window.REMONI_PATIENT && window.REMONI_PATIENT.id ? window.REMONI_PATIENT.id : "00001";
+            const res = await fetch("/api/doctor_requests?patient_id=" + patientId);
+            if (!res.ok) return;
+            const data = await res.json();
+            const reqs = data && data.requests ? data.requests : [];
+            if (reqs.length > 0) {
+              const latest = reqs[0];
+              const lastShownId = sessionStorage.getItem("doctorChatRequestLastId");
+              const dtStr = latest.date && latest.time ? `${latest.date}T${latest.time}:00` : null;
+              const dt = dtStr ? new Date(dtStr) : null;
+              const ageMs = dt && !isNaN(dt.getTime()) ? (Date.now() - dt.getTime()) : null;
+              const isRecent = ageMs !== null ? ageMs <= 5 * 60 * 1000 : true;
+
+              if (isRecent && lastShownId !== String(latest.id || "")) {
+                showDoctorChatRequest(latest.id, patientId);
+                sessionStorage.setItem("doctorChatRequestLastId", String(latest.id || ""));
+              } else if (!isRecent) {
+                // mark stale request as seen so it doesn't keep blinking
+                try {
+                  await fetch("/api/doctor_requests/seen", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ request_id: latest.id, patient_id: patientId })
+                  });
+                } catch {}
+                hideDoctorChatRequest();
+              }
+            } else if (chatRequestVisible) {
+              hideDoctorChatRequest();
+            }
+          } catch (e) {
+            console.error("Doctor request poll error:", e);
+          }
+        };
+        pollDoctorRequests();
+        setInterval(pollDoctorRequests, 10000);
+
+        const chatBtn = document.getElementById("doctorChatRequest");
+        if (chatBtn) {
+          chatBtn.addEventListener("click", async () => {
+            const reqId = chatBtn.dataset.requestId || "";
+            const patId = chatBtn.dataset.patientId || (window.REMONI_PATIENT && window.REMONI_PATIENT.id ? window.REMONI_PATIENT.id : "00001");
+            if (reqId) {
+              try {
+                await fetch("/api/doctor_requests/seen", {
+                  method: "POST",
+                  headers: { "Content-Type": "application/json" },
+                  body: JSON.stringify({ request_id: reqId, patient_id: patId })
+                });
+              } catch (e) {
+                console.error("Failed to mark request seen:", e);
+              }
+            }
+            hideDoctorChatRequest();
+            window.location.href = "/patient/chats?chat=direct-00001";
+          });
+        }
+
+        const fallBtn = document.getElementById("fallChatRequest");
+        if (fallBtn) {
+          fallBtn.addEventListener("click", () => {
+            hideFallChatRequest();
+            window.location.href = "/patient/chats?chat=remoni";
+          });
+        }
+      })();
+    </script>
+  </body>
+</html>

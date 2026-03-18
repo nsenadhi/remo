@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Patient Chats</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/teams_chat.css') }}" />
+</head>
+<body class="teams-body" data-role="patient">
+  <div class="teams-shell">
+    <aside class="teams-sidebar">
+      <div class="teams-sidebar__header">
+        <button class="teams-back" onclick="handleChatBack('/patient')">
+          <svg class="teams-back__icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M11 6L4 12L11 18" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M6.5 12H19.5" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/>
+          </svg>
+          <span>Back</span>
+        </button>
+        <button class="teams-logout" onclick="window.location.href='/logout'">
+          <svg class="teams-logout__icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M16 17l5-5-5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M21 12H9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>Logout</span>
+        </button>
+      </div>
+      <div class="teams-section">
+        <div class="teams-section__title">Chats</div>
+        <div class="teams-chat-item" data-key="direct-00001" data-target="/chatroom?patient_id=00001">
+          <div class="avatar avatar-img">
+            <img src="{{ url_for('static', filename='images/doctor-3.png') }}" alt="Doctor" />
+          </div>
+          <div class="chat-meta">
+            <div class="chat-name">Doctor</div>
+            <div class="chat-preview">Doctor Patient</div>
+          </div>
+          <span class="chat-unread" data-unread-for="direct"></span>
+        </div>
+        <div class="teams-chat-item" data-key="remoni" data-target="/patient/chat">
+          <div class="avatar avatar-img">
+            <img src="{{ url_for('static', filename='images/nurse.png') }}" alt="REMONI AI" />
+          </div>
+          <div class="chat-meta">
+            <div class="chat-name">REMONI AI</div>
+            <div class="chat-preview">Assistant chat</div>
+          </div>
+          <span class="chat-unread" data-unread-for="remoni"></span>
+        </div>
+      </div>
+    </aside>
+    <main class="teams-main">
+      <div id="chatPlaceholder" class="teams-placeholder">
+        <img src="{{ url_for('static', filename='images/nurse.png') }}" alt="Remoni" />
+        <h2>REMONI Virtual Assistant</h2>
+        <p>Select a chat to start messaging</p>
+      </div>
+      <iframe id="chatFrame" class="teams-frame" src="about:blank"></iframe>
+    </main>
+  </div>
+  <script>
+    function handleChatBack(fallback) {
+      try {
+        const saved = sessionStorage.getItem("chat_return") || "";
+        const ref = saved || document.referrer || "";
+        if (ref && ref.startsWith(window.location.origin)) {
+          window.location.href = ref;
+          return;
+        }
+      } catch {}
+      window.location.href = fallback;
+    }
+
+    (function rememberReturn() {
+      try {
+        const ref = document.referrer || "";
+        if (ref && ref.startsWith(window.location.origin) && !ref.includes("/patient/chats")) {
+          sessionStorage.setItem("chat_return", ref);
+        }
+      } catch {}
+    })();
+
+    const items = document.querySelectorAll('.teams-chat-item');
+    const frame = document.getElementById('chatFrame');
+    const placeholder = document.getElementById('chatPlaceholder');
+    const selectItem = (item) => {
+      item.addEventListener('click', () => {
+        items.forEach(i => i.classList.remove('active'));
+        item.classList.add('active');
+        frame.src = item.dataset.target;
+        if (placeholder) placeholder.style.display = 'none';
+        frame.style.display = 'block';
+      });
+    };
+    items.forEach(selectItem);
+
+    const params = new URLSearchParams(window.location.search);
+    const target = params.get('chat');
+    const openDefault = () => {
+      const remoni = Array.from(items).find(i => i.dataset.key === 'remoni');
+      if (remoni) {
+        remoni.click();
+      }
+    };
+    if (target) {
+      const match = Array.from(items).find(i => i.dataset.key === target);
+      if (match) {
+        match.click();
+      } else {
+        openDefault();
+      }
+    } else {
+      openDefault();
+    }
+
+    window.addEventListener('message', (event) => {
+      if (event.origin !== window.location.origin) return;
+      const data = event.data;
+      if (!data || typeof data !== 'object') return;
+      if (data.type === 'chatroom:navigate' && data.target) {
+        window.location.href = data.target;
+      }
+    });
+
+    (function () {
+      const patientId = "00001";
+      const role = "patient";
+      const directBadge = document.querySelector('[data-unread-for="direct"]');
+      const remoniBadge = document.querySelector('[data-unread-for="remoni"]');
+
+      function parseMsgTime(msg) {
+        const dt = new Date(`${msg.date || ""} ${msg.timestamp || ""}`);
+        return isNaN(dt.getTime()) ? null : dt;
+      }
+
+      async function updateDirectBadge() {
+        if (!directBadge) return;
+        try {
+          const res = await fetch(`/api/chatroom/messages?patient_id=${patientId}`);
+          if (!res.ok) return;
+          const data = await res.json();
+          const messages = data && data.messages ? data.messages : [];
+          let lastSeen = null;
+          try {
+            const stored = localStorage.getItem(`chatroom_last_seen_${role}_${patientId}`);
+            if (stored) {
+              const dt = new Date(stored);
+              if (!isNaN(dt.getTime())) lastSeen = dt;
+            }
+          } catch {}
+
+          let count = 0;
+          for (const msg of messages) {
+            if (!msg || msg.sender === role) continue;
+            const dt = parseMsgTime(msg);
+            if (!dt) continue;
+            if (lastSeen && dt <= lastSeen) continue;
+            count += 1;
+          }
+          if (count > 0) {
+            directBadge.textContent = count > 99 ? "99+" : String(count);
+            directBadge.style.display = "inline-block";
+          } else {
+            directBadge.style.display = "none";
+          }
+        } catch {}
+      }
+
+      function updateRemoniBadge() {
+        if (!remoniBadge) return;
+        let count = 0;
+        try {
+          const raw = localStorage.getItem("remoni_unread_patient");
+          count = raw ? parseInt(raw, 10) : 0;
+        } catch {}
+        if (count > 0) {
+          remoniBadge.textContent = count > 99 ? "99+" : String(count);
+          remoniBadge.style.display = "inline-block";
+        } else {
+          remoniBadge.style.display = "none";
+        }
+      }
+
+      updateDirectBadge();
+      updateRemoniBadge();
+      setInterval(() => {
+        updateDirectBadge();
+        updateRemoniBadge();
+      }, 10000);
+    })();
+  </script>
+</body>
+</html>

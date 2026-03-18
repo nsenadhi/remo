@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Profile</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f1fb;
+            color: #1f2937;
+        }
+        .page {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 32px 20px 48px;
+        }
+        .topbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 24px;
+        }
+        .back-btn, .save-btn {
+            border: none;
+            border-radius: 10px;
+            padding: 12px 18px;
+            cursor: pointer;
+            font-weight: 700;
+        }
+        .back-btn {
+            background: #ffffff;
+            color: #581B98;
+            box-shadow: 0 8px 24px rgba(88, 27, 152, 0.08);
+        }
+        .card {
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 16px 40px rgba(88, 27, 152, 0.12);
+            overflow: hidden;
+        }
+        .card-header {
+            background: linear-gradient(135deg, #581B98, #7C3AED);
+            color: #ffffff;
+            padding: 28px;
+        }
+        .content {
+            display: grid;
+            grid-template-columns: 240px 1fr;
+            gap: 24px;
+            padding: 28px;
+        }
+        .avatar-wrap {
+            text-align: center;
+        }
+        .avatar {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 24px;
+            background: #ede9fe;
+            border: 4px solid #ede9fe;
+        }
+        .upload-label {
+            margin-top: 14px;
+            display: inline-block;
+            background: #581B98;
+            color: #ffffff;
+            padding: 10px 14px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: 700;
+        }
+        .upload-label input {
+            display: none;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+        .field.full {
+            grid-column: 1 / -1;
+        }
+        label {
+            display: block;
+            font-size: 13px;
+            font-weight: 700;
+            color: #4b5563;
+            margin-bottom: 6px;
+        }
+        input, textarea {
+            width: 100%;
+            box-sizing: border-box;
+            border: 1px solid #d1d5db;
+            border-radius: 10px;
+            padding: 12px 14px;
+            font-size: 14px;
+        }
+        textarea {
+            min-height: 110px;
+            resize: vertical;
+        }
+        .actions {
+            margin-top: 20px;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .save-btn {
+            background: #2563eb;
+            color: #ffffff;
+        }
+        .status {
+            margin-top: 14px;
+            font-size: 14px;
+            min-height: 20px;
+        }
+        .status.error {
+            color: #dc2626;
+        }
+        .status.success {
+            color: #16a34a;
+        }
+        @media (max-width: 760px) {
+            .content {
+                grid-template-columns: 1fr;
+            }
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="topbar">
+            <button class="back-btn" onclick="window.location.href='/doctor'">Back to Dashboard</button>
+            <strong>{{ user_name }}</strong>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h1 style="margin:0 0 8px;">Doctor Profile</h1>
+                <p style="margin:0; opacity:0.9;">Update your contact details used for weekly report delivery.</p>
+            </div>
+
+            <form id="doctor-profile-form" class="content" enctype="multipart/form-data">
+                <div class="avatar-wrap">
+                    <img
+                        id="profile-preview"
+                        class="avatar"
+                        src="{{ url_for('static', filename=profile.profile_picture if profile.profile_picture else 'images/doctor-3.png') }}"
+                        alt="Doctor profile picture"
+                    />
+                    <label class="upload-label">
+                        Upload Photo
+                        <input id="profile_picture" name="profile_picture" type="file" accept="image/*" />
+                    </label>
+                </div>
+
+                <div>
+                    <div class="grid">
+                        <div class="field">
+                            <label for="name">Name</label>
+                            <input id="name" name="name" type="text" value="{{ profile.name or '' }}" required />
+                        </div>
+                        <div class="field">
+                            <label for="email">Email</label>
+                            <input id="email" name="email" type="email" value="{{ profile.email or '' }}" required />
+                        </div>
+                        <div class="field">
+                            <label for="phone_number">Phone Number</label>
+                            <input id="phone_number" name="phone_number" type="text" value="{{ profile.phone_number or '' }}" />
+                        </div>
+                        <div class="field">
+                            <label for="whatsapp_number">WhatsApp Number</label>
+                            <input id="whatsapp_number" name="whatsapp_number" type="text" value="{{ profile.whatsapp_number or '' }}" />
+                        </div>
+                        <div class="field full">
+                            <label for="home_address">Home Address</label>
+                            <textarea id="home_address" name="home_address">{{ profile.home_address or '' }}</textarea>
+                        </div>
+                    </div>
+
+                    <div class="actions">
+                        <button class="save-btn" type="submit">Save Profile</button>
+                    </div>
+                    <div id="status" class="status"></div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        const form = document.getElementById('doctor-profile-form');
+        const statusEl = document.getElementById('status');
+        const fileInput = document.getElementById('profile_picture');
+        const preview = document.getElementById('profile-preview');
+
+        fileInput.addEventListener('change', () => {
+            const file = fileInput.files && fileInput.files[0];
+            if (!file) return;
+            const reader = new FileReader();
+            reader.onload = () => {
+                preview.src = reader.result;
+            };
+            reader.readAsDataURL(file);
+        });
+
+        form.addEventListener('submit', async (event) => {
+            event.preventDefault();
+            statusEl.className = 'status';
+            statusEl.textContent = 'Saving...';
+            try {
+                const formData = new FormData(form);
+                const response = await fetch('/api/doctor/profile', {
+                    method: 'POST',
+                    body: formData
+                });
+                const data = await response.json();
+                if (!response.ok || !data.success) {
+                    throw new Error(data.message || 'Failed to save profile');
+                }
+                statusEl.className = 'status success';
+                statusEl.textContent = 'Profile saved successfully.';
+            } catch (error) {
+                statusEl.className = 'status error';
+                statusEl.textContent = error.message || 'Failed to save profile.';
+            }
+        });
+    </script>
+</body>
+</html>

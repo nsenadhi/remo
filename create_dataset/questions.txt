@@ -1,0 +1,1000 @@
+Give me the current body temperature of the patient 02285.
+Provide me the respiratory rate and systolic pressure of the patient 05419 in the last 19 days.
+Show me the current image of the patient 09751.
+What is the patient 08744 doing and what is the patient's mood at 4pm?
+Give me plots of patient 03544 respiratory rate and oxygen saturation from 10am to 12pm.
+What was the respiratory rate for patient 09747 yesterday at 12am?
+Retrieve the respiratory rate data of patient 02090 between May 04 and Jun 28.
+Can I have the respiratory rate readings for patient 05946 over the last 20 hours?
+Display the historical data for oxygen saturation of patient 05973 for the past 120 days.
+Show me the patient's heart rate recorded at each 30-min interval from 9am to 5pm today.
+What was the systolic pressure of patient 00785 last week?
+Provide the activity of patient 08504 during 2pm on Jan 08.
+What was the mood of patient 08232 captured at this time yesterday?
+Can you show me the trend of diastolic pressure for patient 06685 since last Monday?
+Retrieve patient's 00350 respiratory rate and blood pressure recorded on Oct 16.
+How has the systolic pressure of patient 02939 changed in the last 16?
+Provide all images taken of patient 05633 over the past 29 days.
+Give me the readings of oxygen saturation and heart rate for patient 08524 at every hour today.
+Show me the oxygen saturation levels for patient 06452 today at intervals of 30 minutes.
+What were the recorded systolic pressure values of patient 01038 yesterday morning?
+Can I have the blood pressure of patient 05796 from 3am to now?
+Provide the visual data for patient 08286 at 9pm.
+What images were taken of patient 02159 on Apr 25?
+Retrieve the last recorded emotion of patient 00862 during today's session.
+What is the historical pattern for patient 04299's blood pressure over the last 12 days?
+Show me the logs of activity for patient 01650 captured in the afternoon today.
+What were the patient's diastolic pressure and heart rate recorded at this time on each of the past two days?
+Provide the heart rate variability for patient 01925 within the last 72 hours.
+How does patient 00532's systolic pressure vary over the last 3 weeks?
+When was the last recorded activity for patient 04032?
+What is the pattern in body temperature readings for patient 06363 this week?
+Display the sequence of images for patient 01193 since yesterday.
+Can you retrieve the historical data on systolic pressure and body temperature of patient 05145 for 11 months ago?
+Provide a summary of patient 00491's heart rate recorded in the morning today.
+Show me patient 07430's heart rate and blood pressure rates from 2 weeks ago.
+Give an analysis of body temperature recorded for patient 01241 in the last 15 days.
+Display the body temperature values recorded for patient 02693 during last night.
+What was the latest image captured for patient 06193 today?
+Retrieve the body temperature of patient 04967 every 30 minutes for the previous day.
+Can I get a detailed report of patient 03387's systolic pressure values on the weekend?
+Can you show me patient 03746's diastolic pressure trend over the last 2 weeks?
+Provide the sequence of activities for patient 07450 between noon and midnight yesterday.
+What were the blood pressure levels of patient 08866 at the start of each hour today?
+Can you give me a summary of respiratory rate recorded for patient 02508 in the evening yesterday?
+Show me historical data of diastolic pressure for patient 08491 on each Friday of October.
+Present patient 00627's respiratory rate data for the last Saturday.
+Provide a timeline of recorded activities and moods for patient 02157 on Apr 20.
+Can I have the heart rate values at every 270 interval for patient 06532 on May 31?
+Retrieve the set of images captured after 5 pm for patient 01042 today.
+Show me the patient's heart rate deviation for each day over the past week.
+What was the peak systolic pressure recorded for patient 07756 since this morning?
+Can you provide the respiratory rate logs for patient 03695 over the past 7 hours?
+Show me the systolic pressure and diastolic pressure graphs for patient 08173 from the afternoon of Nov 19.
+Retrieve the sequence of recorded systolic pressure data for patient 08851 from last night.
+What was the activity of patient 09955 documented at midnight?
+Provide the heart rate levels of patient 02368 available for this week.
+Can you give me the current body temperature trend for patient 06246 over the last 120 minutes?
+Show a timeline of patient 07608's systolic pressure recorded every hour today.
+How has the systolic pressure of patient 09512 fluctuated from 5am onwards?
+What emotions have been captured for patient 05583 in the last six hours?
+Provide images of patient 05925 from yesterday evening.
+Can I view the pattern in patient 08959's diastolic pressure readings every two hours this month?
+Retrieve all heart rate logged in for patient 04001 for the past fortnight.
+What blood pressure data was recorded for patient 05338 from noon to 6pm over the last weekend?
+Provide a detailed list of systolic pressure and respiratory rate readings for patient 08544 by the hour for the last 26 days.
+Show data on blood pressure recorded for patient 06510 on each day of this past week.
+What was the respiratory rate trend for patient 00824 at the start of each hour today?
+Can you summarize the blood pressure trend for patient 08941 over the past 2 months?
+What are the recorded activities today for patient 03401 by the hour?
+Provide records of systolic pressure fluctuations for patient 08598 this morning.
+Give me a breakdown of patient 02039's diastolic pressure fluctuations for each day last week.
+What was the average body temperature of patient 00965 in the early morning?
+Retrieve the systolic pressure for patient 02433 from noon.
+Can I have a summary of captured images for patient 04403 over the last 240 minutes?
+Show the progress in blood pressure for patient 00434 compared from two weeks ago to now.
+What are the common activities recorded for patient 01415 this past month?
+Provide detailed diastolic pressure statistics for patient 07797 every 3 hours for the entire day.
+What were the top emotions captured for patient 05701 during late hours last night?
+Display images for patient 06638 during yesterday's evening.
+Can you map out the systolic pressure changes for patient 02216 from 8pm to 9pm two days ago?
+How has the oxygen saturation for patient 05515 varied today?
+Provide a summary of recorded body temperature and associated timestamps for patient 03064 since midnight.
+What are the variations noted in patient 09497's body temperature yesterday morning?
+Retrieve the list of moods shared for patient 06764 in the night on Jun 08.
+What is the daily average blood pressure for patient 08117 during the past week?
+Show data on patient 00866's blood pressure at midday, recorded every day this month.
+Present the diastolic pressure variation for patient 02682 every 30 minutes since 7am.
+Provide a chronological list of body temperature for patient 08574 from last evening.
+What was the pattern of patient 02403's systolic pressure this noon?
+Can I have the image data of different moods captured for patient 00306 since 11am today?
+What are the consistent systolic pressure noted for patient 05576 every 6am this week?
+Retrieve the succession of heart rate data for patient 08480 since sunrise.
+Provide an account of blood pressure readings for patient 03783 the past 90 days.
+Show historical data showing the evening blood pressure pattern of patient 06230.
+What activities were recorded for patient 06279 at 10pm on Nov 26?
+Can you analyze the variations in systolic pressure for patient 05049 since the weekend?
+Show the day's emotional progression and activities of patient 01065 from 7am to 8pm.
+Provide a report on the highest recorded blood pressure for patient 00739 for each day last month.
+What was the recorded oxygen saturation for patient 00943 at 1pm?
+Retrieve the oxygen saturation data for patient 07386 since 4am.
+Can I have a detailed list of oxygen saturation observations for patient 01374 covering all night hours last 3 days?
+Show me all blood pressure readings for patient 09551 at 30-minute intervals over last weekend.
+What were the blood pressure levels of patient 05367 during Monday mornings in the past month?
+Provide data on how patient 07095's body temperature varied on evenings last week from 6pm to midnight.
+Can you retrieve the sequence of patient 07750's heart rate throughout the afternoon?
+Give me the current respiratory rate of the patient 00533.
+Provide me the current diastolic pressure of the patient 08239.
+Please provide a detailed summary of patient 05847's heart rate data over the past 21 hours.
+What images and associated emotions were captured for patient 09284 on Jan 15?
+Retrieve all the heart rate and blood pressure variations for patient 01062 for the past 26 days.
+Can you provide the oxygen saturation trend of patient 06229 from 10am to 12am each day this week?
+How did diastolic pressure levels for patient 04165 change at every recorded instance yesterday?
+Present the sequence of recorded heart rate for patient 08661 from midnight to morning.
+What were patient 04495's oxygen saturation patterns in the evening over the last 11 days?
+Show me images from patient 07905 taken over the previous weekend.
+Provide a summary of respiratory rate data for patient 04266 logged in the morning.
+Can you explore the trends in heart rate and diastolic pressure for patient 00038 post-afternoon meals this week?
+Retrieve mood dynamics captured for patient 00087 from morning till evening the day before yesterday.
+What has been the hourly change in patient 01003's body temperature since Jan 13?
+Show the changes in diastolic pressure of patient 00697 from 9pm to 12pm.
+Provide the list of respiratory rate readings for patient 08200 from 8am today.
+What body temperature were documented for patient 09887 at midnight over the past week?
+Can you give a detailed list of respiratory rate readings for patient 07370 at dawn each day for the past fortnight?
+What was the body's overall temperature pattern for patient 03628 over lunch time yesterday?
+Retrieve the blood pressure recordings for patient 08571 on each Sunday evening in the last 7 months.
+Show trends in systolic pressure for patient 08486 from the morning up to noon.
+How did rdiastolic pressure for patient 04750 fluctuate past midnight today?
+Provide collected oxygen saturation data of patient 07102 captured at 30-minute intervals yesterday.
+What were the moods of patient 05428 from 7 AM to 11 AM each day this week?
+Can I have a summary of heart rate recorded for patient 05057 every hour last Sunday?
+Retrieve the oxygen saturation of patient 03667 measured hourly since last Monday.
+How did patient 08531's morning emotions differ from each other for the past two days?
+What are the most significant variations in diastolic pressure for patient 00396 over every half-hour today?
+Provide insights into patient 02742's body temperature deviations recorded at noon time over the past month.
+Show me the oxygen saturation values for patient 04339 captured every two hours over the last weekend.
+Can you retrieve the complete list of blood pressure of patient 04600 on every day of last week?
+What were the trends in diastolic pressure for patient 09337 since last Thursday afternoon up to now?
+Provide a summary of respiratory rate changes for patient 04490 during mornings over the past 3 weeks.
+What was the pattern and progression of mood states for patient 05977 yesterday?
+Show sequential diastolic pressure data for patient 02786 every hour during today.
+Can you give me a detailed summary of blood pressure and body temperature for patient 09418 since the beginning of this year?
+Retrieve the diastolic pressure readings for patient 08395 from this morning till the current time.
+What are the hourly records for oxygen saturation of patient 08762 today?
+Please provide the respiratory rate readings for patient 00720 captured at 11am daily throughout this week.
+Show the blood pressure recorded daily for patient 02072 each afternoon during last October.
+What were the diastolic pressure fluctuations for patient 04193 during last Saturday?
+Can you provide an analysis of respiratory rate changes for patient 01721 throughout various weekends this month?
+What differences in respiratory rate were noted for patient 02287 from 2pm to 5pm for the past three days?
+Retrieve the hourly sequence of oxygen saturation and diastolic pressure readings for patient 00826 from last Tuesday.
+How has patient 09577's body temperature varied over the past week?
+Show me the daily oxygen saturation averages for patient 00573 for the last 28 mornings.
+Provide all images recorded and their associated emotions for patient 07850 from last night.
+What were the recorded heart rate for patient 06537 each hour during the last Monday?
+Can you summarize the variations in blood pressure for patient 02587 during afternoons this week?
+Retrieve images and recorded oxygen saturation for patient 04955 between 7am and 10pm today.
+Provide a breakdown of oxygen saturation readings for patient 02084 before noon today.
+What was the blood pressure pattern for patient 04159 from 4am to 9am on the first Monday of this month?
+What is the current oxygen saturation of the patient 03785?
+Can you display the detailed blood pressure pattern of patient 05131 for the last 72 hours?
+How has the body temperature of patient 02419 changed during evenings in the last month?
+Retrieve recorded changes in systolic pressure for patient 09490 since today's morning.
+Provide all recorded visuals with detailed annotations for patient 09806 during the morning session.
+What were the trends in diastolic pressure for patient 04285 during the evenings over the last 11 days?
+Can you suggest patterns in oxygen saturation for patient 05312 captured every sunrise last week?
+Show me the list of documented respiratory rate data for patient 03578 at noon each day this month.
+Retrieve an overview of diastolic pressure levels for patient 09933 through afternoon hours yesterday.
+Present body temperature trends for patient 03012 observed during the night over the past two weekends.
+Provide a comprehensive summary of oxygen saturation for patient 08923 recorded on afternoons this month.
+What were the images captured of patient 03536 this evening, and their related moods?
+Can you display summaries of blood pressure dynamics for patient 02795 during the evenings over the past week?
+Show recorded systolic pressure of patient 02029 from 3am to 10pm over the last couple of days.
+What was the maximum blood pressure level for patient 08545 during the last 29 nights?
+What are the most significant fluctuations in diastolic pressure noted for patient 07781 during early hours this week?
+Show me the changes in systolic pressure of patient 06563 during the past weekday mornings.
+What has been the blood pressure pattern for patient 07860 every night in the past fortnight?
+Show me the list of respiratory rate readings for patient 03126 between 9am and 11pm over the last 5 weeks.
+Present the timeline of diastolic pressure changes for patient 05335 over last weekend mornings.
+How did patient's 09327 diastolic pressure change during each weekend morning this year?
+Can you display the historical body temperature logs for patient 05071 during weekend days in last February?
+What was the body temperature pattern of patient 02303 recorded this Sunday?
+Retrieve the sequential changes in blood pressure for patient 03371 on every Thursday this month.
+Show the heart rate readings for patient 04670 during this afternoon.
+What were the variations in diastolic pressure for patient 03311 captured during evening hours each Monday this month?
+Can you display comprehensive respiratory rate records for patient 04478 from every morning last 5 days?
+What trends in body temperature were observed for patient 08164 captured from midnight to 2am this week?
+Show the respiratory rate plot for patient 06206 documented after noon today.
+Provide the respiratory rate records for patient 00699 for the entire day yesterday.
+Retrieve respiratory rate for patient 08677 recorded from noon to 1pm this week.
+What was the body temperature of patient 04997 every hour for the last 13 days?
+Show a progression graph of respiratory rate changes for patient 03950 during each recorded session today.
+Provide a detailed report on vital signs for patient 03685 throughout each evening this weekend.
+Can you provide a summary of heart rate statistics for patient 01062 from midnight to 1am?
+Retrieve all visuals with the corresponding mood annotations captured for patient 03952 today.
+Present the systolic pressure readings for patient 04924 at 1am each day from Feb 18 to Feb 24.
+What were the recorded diastolic pressure observations for patient 06287 from 5am to 11am between May 20 and Jun 16?
+Show the sequence of diastolic pressure recordings for patient 04667 during the afternoons between Dec 19 and Dec 29.
+Can you analyze the vital sign data collected for patient 01118 from midnight to noon today?
+What were the blood pressure recorded for patient 06031 at noon from Dec 28 to Dec 29?
+Provide a summarized list of body temperature readings for patient 03540 every 30 minutes during the evening yesterday.
+Retrieve the systolic pressure readings for patient 04928 at 30-minute intervals since midnight today.
+Give me the current systolic pressure of the patient 00276.
+Provide me the systolic pressure and oxygen saturation of the patient 03232 in the last 14 days.
+Show me the current image of the patient 02274.
+What is the patient 03992 doing and what is the patient's mood at 9pm?
+Give me plots of patient 00887 systolic pressure and oxygen saturation from 7am to 10pm.
+What was the diastolic pressure for patient 01320 yesterday at 5am?
+Retrieve the heart rate data of patient 04675 between Sep 18 and Oct 17.
+Can I have the diastolic pressure readings for patient 08098 over the last 14 hours?
+Display the historical data for body temperature of patient 02573 for the past 14 days.
+Show me the patient's body temperature recorded at each 30-min interval from 9am to 5pm today.
+What was the heart rate of patient 04513 last week?
+Provide the activity of patient 09607 during 8pm on Jul 17.
+What was the mood of patient 03372 captured at this time yesterday?
+Can you show me the trend of systolic pressure for patient 09005 since last Monday?
+Retrieve patient's 01707 respiratory rate and oxygen saturation recorded on Jun 24.
+How has the diastolic pressure of patient 04870 changed in the last 9?
+Provide all images taken of patient 09421 over the past 60 days.
+Give me the readings of diastolic pressure and body temperature for patient 03178 at every hour today.
+Show me the oxygen saturation levels for patient 04045 today at intervals of 30 minutes.
+What were the recorded respiratory rate values of patient 05307 yesterday morning?
+Can I have the respiratory rate of patient 09620 from 3am to now?
+Provide the visual data for patient 05586 at 10pm.
+What images were taken of patient 00386 on Apr 08?
+Retrieve the last recorded emotion of patient 07658 during today's session.
+What is the historical pattern for patient 03262's body temperature over the last 120 days?
+Show me the logs of activity for patient 07634 captured in the afternoon today.
+What were the patient's respiratory rate and blood pressure recorded at this time on each of the past two days?
+Provide the blood pressure variability for patient 05542 within the last 4 hours.
+How does patient 03502's heart rate vary over the last 4 weeks?
+When was the last recorded activity for patient 06614?
+What is the pattern in blood pressure readings for patient 04802 this week?
+Display the sequence of images for patient 03417 since yesterday.
+Can you retrieve the historical data on blood pressure and respiratory rate of patient 04342 for 10 months ago?
+Provide a summary of patient 03029's body temperature recorded in the morning today.
+Show me patient 03435's respiratory rate and systolic pressure rates from 4 weeks ago.
+Give an analysis of diastolic pressure recorded for patient 05058 in the last 3 days.
+Display the oxygen saturation values recorded for patient 08065 during last night.
+What was the latest image captured for patient 09578 today?
+Retrieve the blood pressure of patient 08356 every 30 minutes for the previous day.
+Can I get a detailed report of patient 08574's respiratory rate values on the weekend?
+Can you show me patient 08884's respiratory rate trend over the last 6 weeks?
+Provide the sequence of activities for patient 01437 between noon and midnight yesterday.
+What were the systolic pressure levels of patient 02087 at the start of each hour today?
+Can you give me a summary of body temperature recorded for patient 05855 in the evening yesterday?
+Show me historical data of systolic pressure for patient 00059 on each Friday of October.
+Present patient 01499's heart rate data for the last Saturday.
+Provide a timeline of recorded activities and moods for patient 03032 on Mar 11.
+Can I have the respiratory rate values at every 60 interval for patient 02976 on Oct 11?
+Retrieve the set of images captured after 5 pm for patient 04863 today.
+Show me the patient's systolic pressure deviation for each day over the past week.
+What was the peak body temperature recorded for patient 01052 since this morning?
+Can you provide the heart rate logs for patient 09751 over the past 36 hours?
+Show me the systolic pressure and heart rate graphs for patient 09872 from the afternoon of Nov 02.
+Retrieve the sequence of recorded heart rate data for patient 02337 from last night.
+What was the activity of patient 05396 documented at midnight?
+Provide the respiratory rate levels of patient 07720 available for this week.
+Can you give me the current systolic pressure trend for patient 06097 over the last 150 minutes?
+Show a timeline of patient 05910's respiratory rate recorded every hour today.
+How has the systolic pressure of patient 06945 fluctuated from 2am onwards?
+What emotions have been captured for patient 07669 in the last six hours?
+Provide images of patient 07727 from yesterday evening.
+Can I view the pattern in patient 03563's diastolic pressure readings every two hours this month?
+Retrieve all systolic pressure logged in for patient 01076 for the past fortnight.
+What diastolic pressure data was recorded for patient 04648 from noon to 10pm over the last weekend?
+Provide a detailed list of systolic pressure and respiratory rate readings for patient 02460 by the hour for the last 20 days.
+Show data on respiratory rate recorded for patient 08410 on each day of this past week.
+What was the oxygen saturation trend for patient 03976 at the start of each hour today?
+Can you summarize the oxygen saturation trend for patient 06510 over the past 12 months?
+What are the recorded activities today for patient 06002 by the hour?
+Provide records of respiratory rate fluctuations for patient 07596 this morning.
+Give me a breakdown of patient 01543's heart rate fluctuations for each day last week.
+What was the average heart rate of patient 09801 in the early morning?
+Retrieve the body temperature for patient 04727 from noon.
+Can I have a summary of captured images for patient 02787 over the last 210 minutes?
+Show the progress in respiratory rate for patient 04286 compared from two weeks ago to now.
+What are the common activities recorded for patient 09709 this past month?
+Provide detailed blood pressure statistics for patient 07410 every 24 hours for the entire day.
+What were the top emotions captured for patient 07600 during late hours last night?
+Display images for patient 05876 during yesterday's evening.
+Can you map out the diastolic pressure changes for patient 00932 from 9pm to 10pm two days ago?
+How has the systolic pressure for patient 04529 varied today?
+Provide a summary of recorded heart rate and associated timestamps for patient 01812 since midnight.
+What are the variations noted in patient 08667's respiratory rate yesterday morning?
+Retrieve the list of moods shared for patient 07601 in the night on Sep 25.
+What is the daily average respiratory rate for patient 06178 during the past week?
+Show data on patient 09969's body temperature at midday, recorded every day this month.
+Present the diastolic pressure variation for patient 03909 every 30 minutes since 4am.
+Provide a chronological list of systolic pressure for patient 08066 from last evening.
+What was the pattern of patient 03020's systolic pressure this noon?
+Can I have the image data of different moods captured for patient 01531 since 2am today?
+What are the consistent respiratory rate noted for patient 09744 every 1am this week?
+Retrieve the succession of oxygen saturation data for patient 03852 since sunrise.
+Provide an account of respiratory rate readings for patient 02515 the past 17 days.
+Show historical data showing the evening systolic pressure pattern of patient 03407.
+What activities were recorded for patient 00033 at 11pm on Sep 01?
+Can you analyze the variations in diastolic pressure for patient 07791 since the weekend?
+Show the day's emotional progression and activities of patient 08754 from 2am to 3pm.
+Provide a report on the highest recorded diastolic pressure for patient 03497 for each day last month.
+What was the recorded body temperature for patient 02837 at 4pm?
+Retrieve the body temperature data for patient 03759 since 7am.
+Can I have a detailed list of diastolic pressure observations for patient 04202 covering all night hours last 22 days?
+Show me all blood pressure readings for patient 02450 at 30-minute intervals over last weekend.
+What were the blood pressure levels of patient 04746 during Monday mornings in the past month?
+Provide data on how patient 04517's diastolic pressure varied on evenings last week from 6pm to midnight.
+Can you retrieve the sequence of patient 06387's body temperature throughout the afternoon?
+Give me the current systolic pressure of the patient 08285.
+Provide me the current oxygen saturation of the patient 07216.
+Please provide a detailed summary of patient 03562's heart rate data over the past 3 hours.
+What images and associated emotions were captured for patient 03482 on Feb 09?
+Retrieve all the oxygen saturation and systolic pressure variations for patient 03931 for the past 5 days.
+Can you provide the heart rate trend of patient 01351 from 2am to 9am each day this week?
+How did respiratory rate levels for patient 05525 change at every recorded instance yesterday?
+Present the sequence of recorded body temperature for patient 02866 from midnight to morning.
+What were patient 06110's diastolic pressure patterns in the evening over the last 13 days?
+Show me images from patient 02860 taken over the previous weekend.
+Provide a summary of oxygen saturation data for patient 00825 logged in the morning.
+Can you explore the trends in respiratory rate and systolic pressure for patient 07050 post-afternoon meals this week?
+Retrieve mood dynamics captured for patient 07368 from morning till evening the day before yesterday.
+What has been the hourly change in patient 06383's diastolic pressure since Feb 11?
+Show the changes in respiratory rate of patient 07955 from 5pm to 10pm.
+Provide the list of body temperature readings for patient 06219 from 4am today.
+What oxygen saturation were documented for patient 05705 at midnight over the past week?
+Can you give a detailed list of blood pressure readings for patient 09170 at dawn each day for the past fortnight?
+What was the body's overall temperature pattern for patient 07458 over lunch time yesterday?
+Retrieve the oxygen saturation recordings for patient 03877 on each Sunday evening in the last 9 months.
+Show trends in heart rate for patient 05193 from the morning up to noon.
+How did rdiastolic pressure for patient 07986 fluctuate past midnight today?
+Provide collected diastolic pressure data of patient 01875 captured at 30-minute intervals yesterday.
+What were the moods of patient 01221 from 9 AM to 10 AM each day this week?
+Can I have a summary of heart rate recorded for patient 08411 every hour last Sunday?
+Retrieve the respiratory rate of patient 01812 measured hourly since last Monday.
+How did patient 04018's morning emotions differ from each other for the past two days?
+What are the most significant variations in heart rate for patient 03971 over every half-hour today?
+Provide insights into patient 05305's heart rate deviations recorded at noon time over the past month.
+Show me the respiratory rate values for patient 03749 captured every two hours over the last weekend.
+Can you retrieve the complete list of heart rate of patient 01508 on every day of last week?
+What were the trends in diastolic pressure for patient 09505 since last Thursday afternoon up to now?
+Provide a summary of blood pressure changes for patient 02119 during mornings over the past 4 weeks.
+What was the pattern and progression of mood states for patient 04705 yesterday?
+Show sequential diastolic pressure data for patient 07975 every hour during today.
+Can you give me a detailed summary of diastolic pressure and systolic pressure for patient 00967 since the beginning of this year?
+Retrieve the heart rate readings for patient 08864 from this morning till the current time.
+What are the hourly records for diastolic pressure of patient 00418 today?
+Please provide the body temperature readings for patient 06636 captured at 5am daily throughout this week.
+Show the diastolic pressure recorded daily for patient 02870 each afternoon during last October.
+What were the oxygen saturation fluctuations for patient 04864 during last Saturday?
+Can you provide an analysis of diastolic pressure changes for patient 03827 throughout various weekends this month?
+What differences in oxygen saturation were noted for patient 04891 from 6pm to 7pm for the past three days?
+Retrieve the hourly sequence of respiratory rate and heart rate readings for patient 07492 from last Tuesday.
+How has patient 05600's heart rate varied over the past week?
+Show me the daily body temperature averages for patient 08752 for the last 2 mornings.
+Provide all images recorded and their associated emotions for patient 06385 from last night.
+What were the recorded diastolic pressure for patient 04745 each hour during the last Monday?
+Can you summarize the variations in body temperature for patient 08692 during afternoons this week?
+Retrieve images and recorded diastolic pressure for patient 06147 between 10am and 12pm today.
+Provide a breakdown of diastolic pressure readings for patient 07718 before noon today.
+What was the oxygen saturation pattern for patient 01016 from 3am to 9am on the first Monday of this month?
+What is the current heart rate of the patient 07527?
+Can you display the detailed oxygen saturation pattern of patient 02189 for the last 48 hours?
+How has the systolic pressure of patient 01199 changed during evenings in the last month?
+Retrieve recorded changes in diastolic pressure for patient 06742 since today's morning.
+Provide all recorded visuals with detailed annotations for patient 01015 during the morning session.
+What were the trends in oxygen saturation for patient 07818 during the evenings over the last 120 days?
+Can you suggest patterns in body temperature for patient 08415 captured every sunrise last week?
+Show me the list of documented heart rate data for patient 05356 at noon each day this month.
+Retrieve an overview of oxygen saturation levels for patient 07798 through afternoon hours yesterday.
+Present blood pressure trends for patient 07602 observed during the night over the past two weekends.
+Provide a comprehensive summary of diastolic pressure for patient 03086 recorded on afternoons this month.
+What were the images captured of patient 02690 this evening, and their related moods?
+Can you display summaries of body temperature dynamics for patient 00533 during the evenings over the past week?
+Show recorded blood pressure of patient 06811 from 3am to 9pm over the last couple of days.
+What was the maximum respiratory rate level for patient 05504 during the last 13 nights?
+What are the most significant fluctuations in heart rate noted for patient 08834 during early hours this week?
+Show me the changes in body temperature of patient 03479 during the past weekday mornings.
+What has been the heart rate pattern for patient 04572 every night in the past fortnight?
+Show me the list of oxygen saturation readings for patient 00733 between 6am and 8pm over the last 8 weeks.
+Present the timeline of systolic pressure changes for patient 00448 over last weekend mornings.
+How did patient's 08417 oxygen saturation change during each weekend morning this year?
+Can you display the historical systolic pressure logs for patient 02242 during weekend days in last February?
+What was the diastolic pressure pattern of patient 06426 recorded this Sunday?
+Retrieve the sequential changes in body temperature for patient 01212 on every Thursday this month.
+Show the systolic pressure readings for patient 00244 during this afternoon.
+What were the variations in systolic pressure for patient 06880 captured during evening hours each Monday this month?
+Can you display comprehensive blood pressure records for patient 05424 from every morning last 2 days?
+What trends in oxygen saturation were observed for patient 01042 captured from midnight to 1am this week?
+Show the blood pressure plot for patient 04121 documented after noon today.
+Provide the body temperature records for patient 02334 for the entire day yesterday.
+Retrieve respiratory rate for patient 04120 recorded from noon to 4pm this week.
+What was the respiratory rate of patient 01176 every hour for the last 4 days?
+Show a progression graph of oxygen saturation changes for patient 01335 during each recorded session today.
+Provide a detailed report on vital signs for patient 03644 throughout each evening this weekend.
+Can you provide a summary of heart rate statistics for patient 05190 from midnight to 11am?
+Retrieve all visuals with the corresponding mood annotations captured for patient 05898 today.
+Present the diastolic pressure readings for patient 07494 at 11am each day from Oct 14 to Nov 10.
+What were the recorded heart rate observations for patient 04186 from 8am to 9am between Nov 22 and Dec 28?
+Show the sequence of heart rate recordings for patient 01384 during the afternoons between Oct 10 and Nov 28.
+Can you analyze the vital sign data collected for patient 01560 from midnight to noon today?
+What were the diastolic pressure recorded for patient 03201 at noon from Dec 01 to Dec 28?
+Provide a summarized list of diastolic pressure readings for patient 04105 every 30 minutes during the evening yesterday.
+Retrieve the body temperature readings for patient 01206 at 30-minute intervals since midnight today.
+Give me the current body temperature of the patient 09190.
+Provide me the systolic pressure and respiratory rate of the patient 02060 in the last 24 days.
+Show me the current image of the patient 05836.
+What is the patient 09392 doing and what is the patient's mood at 11pm?
+Give me plots of patient 09368 oxygen saturation and systolic pressure from 1am to 9pm.
+What was the blood pressure for patient 06659 yesterday at 3am?
+Retrieve the oxygen saturation data of patient 01396 between Nov 08 and Dec 27.
+Can I have the diastolic pressure readings for patient 05656 over the last 11 hours?
+Display the historical data for diastolic pressure of patient 02217 for the past 16 days.
+Show me the patient's respiratory rate recorded at each 30-min interval from 9am to 5pm today.
+What was the respiratory rate of patient 06140 last week?
+Provide the activity of patient 08536 during 9pm on Apr 08.
+What was the mood of patient 00994 captured at this time yesterday?
+Can you show me the trend of diastolic pressure for patient 08355 since last Monday?
+Retrieve patient's 03821 respiratory rate and systolic pressure recorded on Jun 02.
+How has the blood pressure of patient 03994 changed in the last 14?
+Provide all images taken of patient 04772 over the past 12 days.
+Give me the readings of oxygen saturation and systolic pressure for patient 03510 at every hour today.
+Show me the body temperature levels for patient 00345 today at intervals of 30 minutes.
+What were the recorded body temperature values of patient 06787 yesterday morning?
+Can I have the oxygen saturation of patient 08781 from 5am to now?
+Provide the visual data for patient 08169 at 8pm.
+What images were taken of patient 00851 on Apr 22?
+Retrieve the last recorded emotion of patient 03331 during today's session.
+What is the historical pattern for patient 01860's oxygen saturation over the last 60 days?
+Show me the logs of activity for patient 07723 captured in the afternoon today.
+What were the patient's respiratory rate and diastolic pressure recorded at this time on each of the past two days?
+Provide the respiratory rate variability for patient 05432 within the last 11 hours.
+How does patient 05811's heart rate vary over the last 8 weeks?
+When was the last recorded activity for patient 08525?
+What is the pattern in diastolic pressure readings for patient 06702 this week?
+Display the sequence of images for patient 03812 since yesterday.
+Can you retrieve the historical data on body temperature and oxygen saturation of patient 01749 for 9 months ago?
+Provide a summary of patient 03818's respiratory rate recorded in the morning today.
+Show me patient 02266's respiratory rate and body temperature rates from 2 weeks ago.
+Give an analysis of systolic pressure recorded for patient 05564 in the last 29 days.
+Display the heart rate values recorded for patient 04966 during last night.
+What was the latest image captured for patient 02062 today?
+Retrieve the diastolic pressure of patient 08117 every 30 minutes for the previous day.
+Can I get a detailed report of patient 01948's systolic pressure values on the weekend?
+Can you show me patient 01918's heart rate trend over the last 2 weeks?
+Provide the sequence of activities for patient 02359 between noon and midnight yesterday.
+What were the blood pressure levels of patient 05634 at the start of each hour today?
+Can you give me a summary of diastolic pressure recorded for patient 05080 in the evening yesterday?
+Show me historical data of oxygen saturation for patient 03532 on each Friday of October.
+Present patient 05476's systolic pressure data for the last Saturday.
+Provide a timeline of recorded activities and moods for patient 00420 on Mar 08.
+Can I have the diastolic pressure values at every 60 interval for patient 04999 on Jul 17?
+Retrieve the set of images captured after 5 pm for patient 05536 today.
+Show me the patient's respiratory rate deviation for each day over the past week.
+What was the peak blood pressure recorded for patient 00524 since this morning?
+Can you provide the oxygen saturation logs for patient 03721 over the past 23 hours?
+Show me the oxygen saturation and heart rate graphs for patient 09185 from the afternoon of Jan 30.
+Retrieve the sequence of recorded diastolic pressure data for patient 09515 from last night.
+What was the activity of patient 00267 documented at midnight?
+Provide the body temperature levels of patient 09760 available for this week.
+Can you give me the current body temperature trend for patient 01999 over the last 240 minutes?
+Show a timeline of patient 02268's blood pressure recorded every hour today.
+How has the respiratory rate of patient 03798 fluctuated from 5am onwards?
+What emotions have been captured for patient 02133 in the last six hours?
+Provide images of patient 07215 from yesterday evening.
+Can I view the pattern in patient 09733's body temperature readings every two hours this month?
+Retrieve all heart rate logged in for patient 03234 for the past fortnight.
+What heart rate data was recorded for patient 02951 from noon to 10pm over the last weekend?
+Provide a detailed list of blood pressure and body temperature readings for patient 08689 by the hour for the last 27 days.
+Show data on body temperature recorded for patient 07788 on each day of this past week.
+What was the heart rate trend for patient 03516 at the start of each hour today?
+Can you summarize the blood pressure trend for patient 00307 over the past 6 months?
+What are the recorded activities today for patient 06765 by the hour?
+Provide records of oxygen saturation fluctuations for patient 08840 this morning.
+Give me a breakdown of patient 09456's oxygen saturation fluctuations for each day last week.
+What was the average diastolic pressure of patient 04527 in the early morning?
+Retrieve the respiratory rate for patient 03512 from noon.
+Can I have a summary of captured images for patient 03049 over the last 270 minutes?
+Show the progress in oxygen saturation for patient 00138 compared from two weeks ago to now.
+What are the common activities recorded for patient 08434 this past month?
+Provide detailed oxygen saturation statistics for patient 09995 every 19 hours for the entire day.
+What were the top emotions captured for patient 08333 during late hours last night?
+Display images for patient 05430 during yesterday's evening.
+Can you map out the blood pressure changes for patient 02171 from 8pm to 9pm two days ago?
+How has the blood pressure for patient 02054 varied today?
+Provide a summary of recorded body temperature and associated timestamps for patient 02396 since midnight.
+What are the variations noted in patient 04081's body temperature yesterday morning?
+Retrieve the list of moods shared for patient 00467 in the night on Jul 21.
+What is the daily average systolic pressure for patient 07548 during the past week?
+Show data on patient 02500's body temperature at midday, recorded every day this month.
+Present the respiratory rate variation for patient 00247 every 30 minutes since 1am.
+Provide a chronological list of blood pressure for patient 06931 from last evening.
+What was the pattern of patient 09442's respiratory rate this noon?
+Can I have the image data of different moods captured for patient 04893 since 3am today?
+What are the consistent systolic pressure noted for patient 09994 every 8am this week?
+Retrieve the succession of systolic pressure data for patient 00210 since sunrise.
+Provide an account of oxygen saturation readings for patient 07231 the past 5 days.
+Show historical data showing the evening respiratory rate pattern of patient 04270.
+What activities were recorded for patient 06627 at 2pm on Jan 28?
+Can you analyze the variations in oxygen saturation for patient 00339 since the weekend?
+Show the day's emotional progression and activities of patient 05314 from 6am to 12pm.
+Provide a report on the highest recorded heart rate for patient 09647 for each day last month.
+What was the recorded oxygen saturation for patient 02379 at 7pm?
+Retrieve the diastolic pressure data for patient 08860 since 8am.
+Can I have a detailed list of respiratory rate observations for patient 05202 covering all night hours last 14 days?
+Show me all respiratory rate readings for patient 01573 at 30-minute intervals over last weekend.
+What were the body temperature levels of patient 09480 during Monday mornings in the past month?
+Provide data on how patient 09267's systolic pressure varied on evenings last week from 5pm to midnight.
+Can you retrieve the sequence of patient 02666's blood pressure throughout the afternoon?
+Give me the current blood pressure of the patient 02700.
+Provide me the current heart rate of the patient 04128.
+Please provide a detailed summary of patient 05298's heart rate data over the past 15 hours.
+What images and associated emotions were captured for patient 01399 on Jul 09?
+Retrieve all the body temperature and blood pressure variations for patient 08385 for the past 10 days.
+Can you provide the blood pressure trend of patient 08140 from 8am to 11am each day this week?
+How did blood pressure levels for patient 09404 change at every recorded instance yesterday?
+Present the sequence of recorded systolic pressure for patient 06151 from midnight to morning.
+What were patient 01752's respiratory rate patterns in the evening over the last 19 days?
+Show me images from patient 05974 taken over the previous weekend.
+Provide a summary of heart rate data for patient 00443 logged in the morning.
+Can you explore the trends in oxygen saturation and respiratory rate for patient 02636 post-afternoon meals this week?
+Retrieve mood dynamics captured for patient 01627 from morning till evening the day before yesterday.
+What has been the hourly change in patient 08727's systolic pressure since Dec 20?
+Show the changes in blood pressure of patient 01892 from 4pm to 5pm.
+Provide the list of respiratory rate readings for patient 06415 from 5am today.
+What heart rate were documented for patient 00475 at midnight over the past week?
+Can you give a detailed list of respiratory rate readings for patient 09921 at dawn each day for the past fortnight?
+What was the body's overall temperature pattern for patient 04011 over lunch time yesterday?
+Retrieve the body temperature recordings for patient 02614 on each Sunday evening in the last 5 months.
+Show trends in systolic pressure for patient 05924 from the morning up to noon.
+How did roxygen saturation for patient 00022 fluctuate past midnight today?
+Provide collected systolic pressure data of patient 00825 captured at 30-minute intervals yesterday.
+What were the moods of patient 06247 from 7 AM to 8 AM each day this week?
+Can I have a summary of heart rate recorded for patient 01024 every hour last Sunday?
+Retrieve the heart rate of patient 07647 measured hourly since last Monday.
+How did patient 08055's morning emotions differ from each other for the past two days?
+What are the most significant variations in blood pressure for patient 07405 over every half-hour today?
+Provide insights into patient 03818's body temperature deviations recorded at noon time over the past month.
+Show me the blood pressure values for patient 09507 captured every two hours over the last weekend.
+Can you retrieve the complete list of systolic pressure of patient 09223 on every day of last week?
+What were the trends in respiratory rate for patient 02899 since last Thursday afternoon up to now?
+Provide a summary of systolic pressure changes for patient 00179 during mornings over the past 2 weeks.
+What was the pattern and progression of mood states for patient 09077 yesterday?
+Show sequential respiratory rate data for patient 09552 every hour during today.
+Can you give me a detailed summary of diastolic pressure and heart rate for patient 02458 since the beginning of this year?
+Retrieve the systolic pressure readings for patient 01812 from this morning till the current time.
+What are the hourly records for body temperature of patient 03316 today?
+Please provide the blood pressure readings for patient 01969 captured at 4am daily throughout this week.
+Show the diastolic pressure recorded daily for patient 04423 each afternoon during last October.
+What were the oxygen saturation fluctuations for patient 09010 during last Saturday?
+Can you provide an analysis of oxygen saturation changes for patient 07688 throughout various weekends this month?
+What differences in systolic pressure were noted for patient 01338 from 10pm to 11pm for the past three days?
+Retrieve the hourly sequence of systolic pressure and respiratory rate readings for patient 09297 from last Tuesday.
+How has patient 02222's diastolic pressure varied over the past week?
+Show me the daily oxygen saturation averages for patient 06537 for the last 3 mornings.
+Provide all images recorded and their associated emotions for patient 06108 from last night.
+What were the recorded systolic pressure for patient 02125 each hour during the last Monday?
+Can you summarize the variations in heart rate for patient 05446 during afternoons this week?
+Retrieve images and recorded heart rate for patient 04392 between 6am and 10pm today.
+Provide a breakdown of blood pressure readings for patient 07914 before noon today.
+What was the heart rate pattern for patient 03362 from 10am to 11am on the first Monday of this month?
+What is the current heart rate of the patient 06516?
+Can you display the detailed heart rate pattern of patient 05042 for the last 6 hours?
+How has the blood pressure of patient 00217 changed during evenings in the last month?
+Retrieve recorded changes in systolic pressure for patient 00829 since today's morning.
+Provide all recorded visuals with detailed annotations for patient 07514 during the morning session.
+What were the trends in heart rate for patient 04540 during the evenings over the last 17 days?
+Can you suggest patterns in respiratory rate for patient 09701 captured every sunrise last week?
+Show me the list of documented body temperature data for patient 03068 at noon each day this month.
+Retrieve an overview of oxygen saturation levels for patient 07513 through afternoon hours yesterday.
+Present heart rate trends for patient 04692 observed during the night over the past two weekends.
+Provide a comprehensive summary of oxygen saturation for patient 05359 recorded on afternoons this month.
+What were the images captured of patient 06585 this evening, and their related moods?
+Can you display summaries of blood pressure dynamics for patient 01323 during the evenings over the past week?
+Show recorded heart rate of patient 09634 from 6am to 8pm over the last couple of days.
+What was the maximum heart rate level for patient 08699 during the last 9 nights?
+What are the most significant fluctuations in respiratory rate noted for patient 04495 during early hours this week?
+Show me the changes in body temperature of patient 02728 during the past weekday mornings.
+What has been the systolic pressure pattern for patient 09412 every night in the past fortnight?
+Show me the list of respiratory rate readings for patient 02324 between 9am and 10pm over the last 6 weeks.
+Present the timeline of diastolic pressure changes for patient 08504 over last weekend mornings.
+How did patient's 02288 systolic pressure change during each weekend morning this year?
+Can you display the historical respiratory rate logs for patient 04959 during weekend days in last February?
+What was the oxygen saturation pattern of patient 09720 recorded this Sunday?
+Retrieve the sequential changes in diastolic pressure for patient 07955 on every Thursday this month.
+Show the respiratory rate readings for patient 02206 during this afternoon.
+What were the variations in respiratory rate for patient 03265 captured during evening hours each Monday this month?
+Can you display comprehensive systolic pressure records for patient 07316 from every morning last 4 days?
+What trends in diastolic pressure were observed for patient 02215 captured from midnight to 3am this week?
+Show the oxygen saturation plot for patient 07455 documented after noon today.
+Provide the respiratory rate records for patient 02715 for the entire day yesterday.
+Retrieve heart rate for patient 03938 recorded from noon to 10pm this week.
+What was the diastolic pressure of patient 09081 every hour for the last 6 days?
+Show a progression graph of systolic pressure changes for patient 08521 during each recorded session today.
+Provide a detailed report on vital signs for patient 08972 throughout each evening this weekend.
+Can you provide a summary of respiratory rate statistics for patient 02938 from midnight to 2am?
+Retrieve all visuals with the corresponding mood annotations captured for patient 01151 today.
+Present the oxygen saturation readings for patient 00638 at 12am each day from Dec 07 to Dec 28.
+What were the recorded body temperature observations for patient 07257 from 10am to 12am between May 08 and Jul 03?
+Show the sequence of respiratory rate recordings for patient 06068 during the afternoons between Sep 20 and Oct 04.
+Can you analyze the vital sign data collected for patient 03033 from midnight to noon today?
+What were the oxygen saturation recorded for patient 03887 at noon from Jul 02 to Jul 31?
+Provide a summarized list of diastolic pressure readings for patient 05028 every 30 minutes during the evening yesterday.
+Retrieve the heart rate readings for patient 02253 at 30-minute intervals since midnight today.
+Give me the current blood pressure of the patient 07628.
+Provide me the respiratory rate and heart rate of the patient 01637 in the last 90 days.
+Show me the current image of the patient 00116.
+What is the patient 02377 doing and what is the patient's mood at 4pm?
+Give me plots of patient 00371 heart rate and diastolic pressure from 8am to 10pm.
+What was the heart rate for patient 05181 yesterday at 12am?
+Retrieve the systolic pressure data of patient 07170 between Oct 23 and Nov 19.
+Can I have the systolic pressure readings for patient 03004 over the last 10 hours?
+Display the historical data for body temperature of patient 07077 for the past 12 days.
+Show me the patient's body temperature recorded at each 30-min interval from 9am to 5pm today.
+What was the oxygen saturation of patient 04370 last week?
+Provide the activity of patient 05150 during 1pm on Nov 20.
+What was the mood of patient 02336 captured at this time yesterday?
+Can you show me the trend of heart rate for patient 07112 since last Monday?
+Retrieve patient's 04157 blood pressure and oxygen saturation recorded on May 26.
+How has the oxygen saturation of patient 00583 changed in the last 7?
+Provide all images taken of patient 01403 over the past 23 days.
+Give me the readings of respiratory rate and diastolic pressure for patient 02777 at every hour today.
+Show me the diastolic pressure levels for patient 06170 today at intervals of 30 minutes.
+What were the recorded systolic pressure values of patient 00078 yesterday morning?
+Can I have the body temperature of patient 06964 from 10am to now?
+Provide the visual data for patient 04752 at 2pm.
+What images were taken of patient 04813 on Jan 07?
+Retrieve the last recorded emotion of patient 01432 during today's session.
+What is the historical pattern for patient 01179's blood pressure over the last 23 days?
+Show me the logs of activity for patient 04648 captured in the afternoon today.
+What were the patient's systolic pressure and respiratory rate recorded at this time on each of the past two days?
+Provide the systolic pressure variability for patient 07035 within the last 3 hours.
+How does patient 02631's diastolic pressure vary over the last 7 weeks?
+When was the last recorded activity for patient 00529?
+What is the pattern in systolic pressure readings for patient 02663 this week?
+Display the sequence of images for patient 07708 since yesterday.
+Can you retrieve the historical data on oxygen saturation and body temperature of patient 06226 for 9 months ago?
+Provide a summary of patient 09752's heart rate recorded in the morning today.
+Show me patient 00357's heart rate and systolic pressure rates from 3 weeks ago.
+Give an analysis of diastolic pressure recorded for patient 08640 in the last 22 days.
+Display the body temperature values recorded for patient 03567 during last night.
+What was the latest image captured for patient 03872 today?
+Retrieve the oxygen saturation of patient 01780 every 30 minutes for the previous day.
+Can I get a detailed report of patient 02021's diastolic pressure values on the weekend?
+Can you show me patient 06370's heart rate trend over the last 6 weeks?
+Provide the sequence of activities for patient 02723 between noon and midnight yesterday.
+What were the heart rate levels of patient 02411 at the start of each hour today?
+Can you give me a summary of systolic pressure recorded for patient 09535 in the evening yesterday?
+Show me historical data of respiratory rate for patient 01657 on each Friday of October.
+Present patient 08860's respiratory rate data for the last Saturday.
+Provide a timeline of recorded activities and moods for patient 05849 on Apr 01.
+Can I have the oxygen saturation values at every 150 interval for patient 06786 on Jun 12?
+Retrieve the set of images captured after 5 pm for patient 01055 today.
+Show me the patient's diastolic pressure deviation for each day over the past week.
+What was the peak systolic pressure recorded for patient 05014 since this morning?
+Can you provide the respiratory rate logs for patient 02326 over the past 17 hours?
+Show me the heart rate and body temperature graphs for patient 05551 from the afternoon of Oct 17.
+Retrieve the sequence of recorded respiratory rate data for patient 02081 from last night.
+What was the activity of patient 09819 documented at midnight?
+Provide the oxygen saturation levels of patient 06147 available for this week.
+Can you give me the current blood pressure trend for patient 01255 over the last 270 minutes?
+Show a timeline of patient 07162's blood pressure recorded every hour today.
+How has the systolic pressure of patient 03424 fluctuated from 11am onwards?
+What emotions have been captured for patient 07112 in the last six hours?
+Provide images of patient 05100 from yesterday evening.
+Can I view the pattern in patient 06595's blood pressure readings every two hours this month?
+Retrieve all oxygen saturation logged in for patient 09176 for the past fortnight.
+What respiratory rate data was recorded for patient 05576 from noon to 10pm over the last weekend?
+Provide a detailed list of body temperature and diastolic pressure readings for patient 07407 by the hour for the last 13 days.
+Show data on systolic pressure recorded for patient 06705 on each day of this past week.
+What was the heart rate trend for patient 09986 at the start of each hour today?
+Can you summarize the oxygen saturation trend for patient 01192 over the past 3 months?
+What are the recorded activities today for patient 02613 by the hour?
+Provide records of diastolic pressure fluctuations for patient 08657 this morning.
+Give me a breakdown of patient 04613's blood pressure fluctuations for each day last week.
+What was the average oxygen saturation of patient 01221 in the early morning?
+Retrieve the heart rate for patient 07264 from noon.
+Can I have a summary of captured images for patient 09376 over the last 60 minutes?
+Show the progress in heart rate for patient 07086 compared from two weeks ago to now.
+What are the common activities recorded for patient 06269 this past month?
+Provide detailed body temperature statistics for patient 03075 every 20 hours for the entire day.
+What were the top emotions captured for patient 05564 during late hours last night?
+Display images for patient 07359 during yesterday's evening.
+Can you map out the systolic pressure changes for patient 09645 from 2pm to 12pm two days ago?
+How has the blood pressure for patient 06143 varied today?
+Provide a summary of recorded oxygen saturation and associated timestamps for patient 07412 since midnight.
+What are the variations noted in patient 00819's diastolic pressure yesterday morning?
+Retrieve the list of moods shared for patient 04059 in the night on Mar 30.
+What is the daily average body temperature for patient 05104 during the past week?
+Show data on patient 05634's oxygen saturation at midday, recorded every day this month.
+Present the heart rate variation for patient 08075 every 30 minutes since 10am.
+Provide a chronological list of body temperature for patient 04729 from last evening.
+What was the pattern of patient 00631's respiratory rate this noon?
+Can I have the image data of different moods captured for patient 06905 since 12am today?
+What are the consistent blood pressure noted for patient 01311 every 8am this week?
+Retrieve the succession of diastolic pressure data for patient 02533 since sunrise.
+Provide an account of body temperature readings for patient 01695 the past 9 days.
+Show historical data showing the evening systolic pressure pattern of patient 00415.
+What activities were recorded for patient 03621 at 10pm on Aug 23?
+Can you analyze the variations in blood pressure for patient 07434 since the weekend?
+Show the day's emotional progression and activities of patient 06846 from 8am to 11pm.
+Provide a report on the highest recorded blood pressure for patient 06090 for each day last month.
+What was the recorded body temperature for patient 08025 at 2pm?
+Retrieve the systolic pressure data for patient 00089 since 6am.
+Can I have a detailed list of oxygen saturation observations for patient 05917 covering all night hours last 16 days?
+Show me all blood pressure readings for patient 03744 at 30-minute intervals over last weekend.
+What were the respiratory rate levels of patient 04580 during Monday mornings in the past month?
+Provide data on how patient 02232's body temperature varied on evenings last week from 4pm to midnight.
+Can you retrieve the sequence of patient 06554's oxygen saturation throughout the afternoon?
+Give me the current respiratory rate of the patient 09942.
+Provide me the current respiratory rate of the patient 03744.
+Please provide a detailed summary of patient 04363's oxygen saturation data over the past 4 hours.
+What images and associated emotions were captured for patient 06388 on Aug 13?
+Retrieve all the respiratory rate and blood pressure variations for patient 02394 for the past 28 days.
+Can you provide the diastolic pressure trend of patient 00326 from 9am to 10am each day this week?
+How did oxygen saturation levels for patient 03390 change at every recorded instance yesterday?
+Present the sequence of recorded oxygen saturation for patient 08910 from midnight to morning.
+What were patient 08939's body temperature patterns in the evening over the last 6 days?
+Show me images from patient 00134 taken over the previous weekend.
+Provide a summary of diastolic pressure data for patient 07262 logged in the morning.
+Can you explore the trends in heart rate and respiratory rate for patient 07441 post-afternoon meals this week?
+Retrieve mood dynamics captured for patient 03488 from morning till evening the day before yesterday.
+What has been the hourly change in patient 04348's diastolic pressure since Mar 15?
+Show the changes in body temperature of patient 06570 from 8pm to 9pm.
+Provide the list of systolic pressure readings for patient 06328 from 11am today.
+What blood pressure were documented for patient 08327 at midnight over the past week?
+Can you give a detailed list of body temperature readings for patient 03754 at dawn each day for the past fortnight?
+What was the body's overall temperature pattern for patient 04211 over lunch time yesterday?
+Retrieve the heart rate recordings for patient 08922 on each Sunday evening in the last 3 months.
+Show trends in diastolic pressure for patient 08642 from the morning up to noon.
+How did rblood pressure for patient 05605 fluctuate past midnight today?
+Provide collected heart rate data of patient 01912 captured at 30-minute intervals yesterday.
+What were the moods of patient 04378 from 11 AM to 12 AM each day this week?
+Can I have a summary of body temperature recorded for patient 06853 every hour last Sunday?
+Retrieve the respiratory rate of patient 00394 measured hourly since last Monday.
+How did patient 02289's morning emotions differ from each other for the past two days?
+What are the most significant variations in heart rate for patient 07809 over every half-hour today?
+Provide insights into patient 00094's heart rate deviations recorded at noon time over the past month.
+Show me the respiratory rate values for patient 09511 captured every two hours over the last weekend.
+Can you retrieve the complete list of systolic pressure of patient 01442 on every day of last week?
+What were the trends in diastolic pressure for patient 03868 since last Thursday afternoon up to now?
+Provide a summary of oxygen saturation changes for patient 07875 during mornings over the past 8 weeks.
+What was the pattern and progression of mood states for patient 07785 yesterday?
+Show sequential diastolic pressure data for patient 09428 every hour during today.
+Can you give me a detailed summary of blood pressure and respiratory rate for patient 03534 since the beginning of this year?
+Retrieve the heart rate readings for patient 03441 from this morning till the current time.
+What are the hourly records for systolic pressure of patient 06554 today?
+Please provide the oxygen saturation readings for patient 07366 captured at 1am daily throughout this week.
+Show the respiratory rate recorded daily for patient 05510 each afternoon during last October.
+What were the heart rate fluctuations for patient 05130 during last Saturday?
+Can you provide an analysis of systolic pressure changes for patient 03431 throughout various weekends this month?
+What differences in diastolic pressure were noted for patient 03951 from 8pm to 10pm for the past three days?
+Retrieve the hourly sequence of heart rate and oxygen saturation readings for patient 09617 from last Tuesday.
+How has patient 08731's oxygen saturation varied over the past week?
+Show me the daily systolic pressure averages for patient 00506 for the last 21 mornings.
+Provide all images recorded and their associated emotions for patient 01380 from last night.
+What were the recorded respiratory rate for patient 02110 each hour during the last Monday?
+Can you summarize the variations in respiratory rate for patient 09767 during afternoons this week?
+Retrieve images and recorded systolic pressure for patient 03072 between 5am and 7pm today.
+Provide a breakdown of diastolic pressure readings for patient 04110 before noon today.
+What was the oxygen saturation pattern for patient 06241 from 11am to 12am on the first Monday of this month?
+What is the current diastolic pressure of the patient 04120?
+Can you display the detailed oxygen saturation pattern of patient 05460 for the last 9 hours?
+How has the respiratory rate of patient 07782 changed during evenings in the last month?
+Retrieve recorded changes in heart rate for patient 09240 since today's morning.
+Provide all recorded visuals with detailed annotations for patient 07857 during the morning session.
+What were the trends in respiratory rate for patient 05529 during the evenings over the last 13 days?
+Can you suggest patterns in respiratory rate for patient 07622 captured every sunrise last week?
+Show me the list of documented respiratory rate data for patient 00529 at noon each day this month.
+Retrieve an overview of heart rate levels for patient 04778 through afternoon hours yesterday.
+Present body temperature trends for patient 01356 observed during the night over the past two weekends.
+Provide a comprehensive summary of body temperature for patient 05002 recorded on afternoons this month.
+What were the images captured of patient 05158 this evening, and their related moods?
+Can you display summaries of oxygen saturation dynamics for patient 08573 during the evenings over the past week?
+Show recorded heart rate of patient 06789 from 1am to 5pm over the last couple of days.
+What was the maximum blood pressure level for patient 09674 during the last 15 nights?
+What are the most significant fluctuations in body temperature noted for patient 06931 during early hours this week?
+Show me the changes in body temperature of patient 08789 during the past weekday mornings.
+What has been the body temperature pattern for patient 07064 every night in the past fortnight?
+Show me the list of blood pressure readings for patient 01059 between 5am and 6pm over the last 8 weeks.
+Present the timeline of diastolic pressure changes for patient 04402 over last weekend mornings.
+How did patient's 04424 diastolic pressure change during each weekend morning this year?
+Can you display the historical heart rate logs for patient 02973 during weekend days in last February?
+What was the body temperature pattern of patient 06385 recorded this Sunday?
+Retrieve the sequential changes in body temperature for patient 03413 on every Thursday this month.
+Show the oxygen saturation readings for patient 02503 during this afternoon.
+What were the variations in body temperature for patient 04656 captured during evening hours each Monday this month?
+Can you display comprehensive systolic pressure records for patient 01396 from every morning last 13 days?
+What trends in blood pressure were observed for patient 04941 captured from midnight to 1am this week?
+Show the systolic pressure plot for patient 01941 documented after noon today.
+Provide the heart rate records for patient 02528 for the entire day yesterday.
+Retrieve heart rate for patient 05570 recorded from noon to 1pm this week.
+What was the blood pressure of patient 00051 every hour for the last 11 days?
+Show a progression graph of diastolic pressure changes for patient 03301 during each recorded session today.
+Provide a detailed report on vital signs for patient 07708 throughout each evening this weekend.
+Can you provide a summary of oxygen saturation statistics for patient 05888 from midnight to 5am?
+Retrieve all visuals with the corresponding mood annotations captured for patient 03300 today.
+Present the body temperature readings for patient 09297 at 2am each day from Oct 10 to Nov 04.
+What were the recorded body temperature observations for patient 02469 from 5am to 8am between Feb 10 and Mar 08?
+Show the sequence of diastolic pressure recordings for patient 07637 during the afternoons between Dec 17 and Dec 31.
+Can you analyze the vital sign data collected for patient 01959 from midnight to noon today?
+What were the heart rate recorded for patient 03610 at noon from Aug 29 to Oct 30?
+Provide a summarized list of blood pressure readings for patient 02156 every 30 minutes during the evening yesterday.
+Retrieve the oxygen saturation readings for patient 04587 at 30-minute intervals since midnight today.
+Give me the current blood pressure of the patient 08739.
+Provide me the diastolic pressure and heart rate of the patient 03753 in the last 21 days.
+Show me the current image of the patient 01684.
+What is the patient 06510 doing and what is the patient's mood at 4pm?
+Give me plots of patient 08137 heart rate and systolic pressure from 1am to 3pm.
+What was the heart rate for patient 02707 yesterday at 3am?
+Retrieve the oxygen saturation data of patient 04545 between Nov 16 and Nov 22.
+Can I have the diastolic pressure readings for patient 09607 over the last 2 hours?
+Display the historical data for respiratory rate of patient 04596 for the past 20 days.
+Show me the patient's diastolic pressure recorded at each 30-min interval from 9am to 5pm today.
+What was the heart rate of patient 00839 last week?
+Provide the activity of patient 09573 during 6pm on Dec 16.
+What was the mood of patient 09339 captured at this time yesterday?
+Can you show me the trend of systolic pressure for patient 07892 since last Monday?
+Retrieve patient's 03364 systolic pressure and respiratory rate recorded on Dec 19.
+How has the body temperature of patient 07895 changed in the last 13?
+Provide all images taken of patient 08380 over the past 11 days.
+Give me the readings of body temperature and diastolic pressure for patient 03516 at every hour today.
+Show me the heart rate levels for patient 02290 today at intervals of 30 minutes.
+What were the recorded body temperature values of patient 08372 yesterday morning?
+Can I have the respiratory rate of patient 02468 from 12am to now?
+Provide the visual data for patient 07182 at 12pm.
+What images were taken of patient 02266 on Oct 31?
+Retrieve the last recorded emotion of patient 04583 during today's session.
+What is the historical pattern for patient 01927's oxygen saturation over the last 9 days?
+Show me the logs of activity for patient 05153 captured in the afternoon today.
+What were the patient's respiratory rate and blood pressure recorded at this time on each of the past two days?
+Provide the heart rate variability for patient 01434 within the last 22 hours.
+How does patient 02238's oxygen saturation vary over the last 4 weeks?
+When was the last recorded activity for patient 05222?
+What is the pattern in blood pressure readings for patient 07373 this week?
+Display the sequence of images for patient 00779 since yesterday.
+Can you retrieve the historical data on systolic pressure and diastolic pressure of patient 00373 for 12 months ago?
+Provide a summary of patient 03127's oxygen saturation recorded in the morning today.
+Show me patient 03659's diastolic pressure and systolic pressure rates from 3 weeks ago.
+Give an analysis of oxygen saturation recorded for patient 09037 in the last 45 days.
+Display the diastolic pressure values recorded for patient 00863 during last night.
+What was the latest image captured for patient 07372 today?
+Retrieve the heart rate of patient 00658 every 30 minutes for the previous day.
+Can I get a detailed report of patient 05165's respiratory rate values on the weekend?
+Can you show me patient 02477's systolic pressure trend over the last 5 weeks?
+Provide the sequence of activities for patient 04636 between noon and midnight yesterday.
+What were the heart rate levels of patient 04830 at the start of each hour today?
+Can you give me a summary of blood pressure recorded for patient 09057 in the evening yesterday?
+Show me historical data of systolic pressure for patient 00109 on each Friday of October.
+Present patient 04322's heart rate data for the last Saturday.
+Provide a timeline of recorded activities and moods for patient 06507 on Jun 09.
+Can I have the respiratory rate values at every 120 interval for patient 07505 on Sep 18?
+Retrieve the set of images captured after 5 pm for patient 05125 today.
+Show me the patient's oxygen saturation deviation for each day over the past week.
+What was the peak blood pressure recorded for patient 05467 since this morning?
+Can you provide the systolic pressure logs for patient 02124 over the past 6 hours?
+Show me the heart rate and oxygen saturation graphs for patient 08909 from the afternoon of Jul 18.
+Retrieve the sequence of recorded diastolic pressure data for patient 00148 from last night.
+What was the activity of patient 07046 documented at midnight?
+Provide the oxygen saturation levels of patient 02755 available for this week.
+Can you give me the current diastolic pressure trend for patient 09533 over the last 270 minutes?
+Show a timeline of patient 00927's blood pressure recorded every hour today.
+How has the respiratory rate of patient 03254 fluctuated from 12am onwards?
+What emotions have been captured for patient 02121 in the last six hours?
+Provide images of patient 05829 from yesterday evening.
+Can I view the pattern in patient 09486's systolic pressure readings every two hours this month?
+Retrieve all body temperature logged in for patient 07680 for the past fortnight.
+What diastolic pressure data was recorded for patient 05508 from noon to 6pm over the last weekend?
+Provide a detailed list of blood pressure and body temperature readings for patient 04734 by the hour for the last 22 days.
+Show data on diastolic pressure recorded for patient 06527 on each day of this past week.
+What was the diastolic pressure trend for patient 05497 at the start of each hour today?
+Can you summarize the body temperature trend for patient 04881 over the past 3 months?
+What are the recorded activities today for patient 09919 by the hour?
+Provide records of respiratory rate fluctuations for patient 06414 this morning.
+Give me a breakdown of patient 03459's diastolic pressure fluctuations for each day last week.
+What was the average diastolic pressure of patient 08372 in the early morning?
+Retrieve the respiratory rate for patient 05705 from noon.
+Can I have a summary of captured images for patient 03835 over the last 120 minutes?
+Show the progress in body temperature for patient 07210 compared from two weeks ago to now.
+What are the common activities recorded for patient 01450 this past month?
+Provide detailed respiratory rate statistics for patient 04617 every 23 hours for the entire day.
+What were the top emotions captured for patient 09923 during late hours last night?
+Display images for patient 07980 during yesterday's evening.
+Can you map out the body temperature changes for patient 06564 from 10pm to 11pm two days ago?
+How has the respiratory rate for patient 09004 varied today?
+Provide a summary of recorded body temperature and associated timestamps for patient 07448 since midnight.
+What are the variations noted in patient 01976's respiratory rate yesterday morning?
+Retrieve the list of moods shared for patient 04897 in the night on Oct 09.
+What is the daily average heart rate for patient 06269 during the past week?
+Show data on patient 07342's systolic pressure at midday, recorded every day this month.
+Present the respiratory rate variation for patient 09937 every 30 minutes since 9am.
+Provide a chronological list of systolic pressure for patient 07152 from last evening.
+What was the pattern of patient 07993's diastolic pressure this noon?
+Can I have the image data of different moods captured for patient 02505 since 8am today?
+What are the consistent oxygen saturation noted for patient 06459 every 11am this week?
+Retrieve the succession of body temperature data for patient 07738 since sunrise.
+Provide an account of body temperature readings for patient 08830 the past 19 days.
+Show historical data showing the evening systolic pressure pattern of patient 08426.
+What activities were recorded for patient 09800 at 9pm on Jun 05?
+Can you analyze the variations in body temperature for patient 03934 since the weekend?
+Show the day's emotional progression and activities of patient 02174 from 6am to 9pm.
+Provide a report on the highest recorded heart rate for patient 07810 for each day last month.
+What was the recorded heart rate for patient 08666 at 8pm?
+Retrieve the body temperature data for patient 01533 since 2am.
+Can I have a detailed list of body temperature observations for patient 00427 covering all night hours last 8 days?
+Show me all blood pressure readings for patient 00823 at 30-minute intervals over last weekend.
+What were the heart rate levels of patient 00385 during Monday mornings in the past month?
+Provide data on how patient 07148's respiratory rate varied on evenings last week from 8pm to midnight.
+Can you retrieve the sequence of patient 00240's blood pressure throughout the afternoon?
+Give me the current diastolic pressure of the patient 01921.
+Provide me the current blood pressure of the patient 09690.
+Please provide a detailed summary of patient 06508's respiratory rate data over the past 13 hours.
+What images and associated emotions were captured for patient 05838 on Dec 20?
+Retrieve all the diastolic pressure and oxygen saturation variations for patient 03741 for the past 25 days.
+Can you provide the respiratory rate trend of patient 04966 from 4am to 12am each day this week?
+How did systolic pressure levels for patient 09060 change at every recorded instance yesterday?
+Present the sequence of recorded heart rate for patient 07240 from midnight to morning.
+What were patient 00163's oxygen saturation patterns in the evening over the last 16 days?
+Show me images from patient 04391 taken over the previous weekend.
+Provide a summary of diastolic pressure data for patient 07657 logged in the morning.
+Can you explore the trends in diastolic pressure and oxygen saturation for patient 03903 post-afternoon meals this week?
+Retrieve mood dynamics captured for patient 06773 from morning till evening the day before yesterday.
+What has been the hourly change in patient 02197's respiratory rate since Apr 26?
+Show the changes in heart rate of patient 03097 from 7pm to 10pm.
+Provide the list of respiratory rate readings for patient 05419 from 5am today.
+What oxygen saturation were documented for patient 06513 at midnight over the past week?
+Can you give a detailed list of oxygen saturation readings for patient 02032 at dawn each day for the past fortnight?
+What was the body's overall temperature pattern for patient 03629 over lunch time yesterday?
+Retrieve the blood pressure recordings for patient 01095 on each Sunday evening in the last 2 months.
+Show trends in blood pressure for patient 06890 from the morning up to noon.
+How did rdiastolic pressure for patient 07459 fluctuate past midnight today?
+Provide collected diastolic pressure data of patient 09029 captured at 30-minute intervals yesterday.
+What were the moods of patient 02625 from 5 AM to 6 AM each day this week?
+Can I have a summary of respiratory rate recorded for patient 04892 every hour last Sunday?
+Retrieve the systolic pressure of patient 00444 measured hourly since last Monday.
+How did patient 04704's morning emotions differ from each other for the past two days?
+What are the most significant variations in diastolic pressure for patient 04732 over every half-hour today?
+Provide insights into patient 07662's respiratory rate deviations recorded at noon time over the past month.
+Show me the blood pressure values for patient 02311 captured every two hours over the last weekend.
+Can you retrieve the complete list of diastolic pressure of patient 02494 on every day of last week?
+What were the trends in respiratory rate for patient 02150 since last Thursday afternoon up to now?
+Provide a summary of diastolic pressure changes for patient 02631 during mornings over the past 6 weeks.
+What was the pattern and progression of mood states for patient 05173 yesterday?
+Show sequential heart rate data for patient 02130 every hour during today.
+Can you give me a detailed summary of body temperature and blood pressure for patient 06281 since the beginning of this year?
+Retrieve the systolic pressure readings for patient 08947 from this morning till the current time.
+What are the hourly records for oxygen saturation of patient 09567 today?
+Please provide the diastolic pressure readings for patient 03881 captured at 1am daily throughout this week.
+Show the heart rate recorded daily for patient 02733 each afternoon during last October.
+What were the systolic pressure fluctuations for patient 03311 during last Saturday?
+Can you provide an analysis of body temperature changes for patient 02437 throughout various weekends this month?
+What differences in body temperature were noted for patient 02627 from 6pm to 9pm for the past three days?
+Retrieve the hourly sequence of heart rate and blood pressure readings for patient 05599 from last Tuesday.
+How has patient 02432's respiratory rate varied over the past week?
+Show me the daily heart rate averages for patient 00596 for the last 19 mornings.
+Provide all images recorded and their associated emotions for patient 09144 from last night.
+What were the recorded blood pressure for patient 06184 each hour during the last Monday?
+Can you summarize the variations in heart rate for patient 09601 during afternoons this week?
+Retrieve images and recorded blood pressure for patient 02314 between 6am and 10pm today.
+Provide a breakdown of respiratory rate readings for patient 06656 before noon today.
+What was the respiratory rate pattern for patient 00601 from 2am to 3am on the first Monday of this month?
+What is the current blood pressure of the patient 01760?
+Can you display the detailed respiratory rate pattern of patient 08243 for the last 8 hours?
+How has the heart rate of patient 08695 changed during evenings in the last month?
+Retrieve recorded changes in blood pressure for patient 05297 since today's morning.
+Provide all recorded visuals with detailed annotations for patient 00306 during the morning session.
+What were the trends in diastolic pressure for patient 00229 during the evenings over the last 18 days?
+Can you suggest patterns in oxygen saturation for patient 03992 captured every sunrise last week?
+Show me the list of documented systolic pressure data for patient 02222 at noon each day this month.
+Retrieve an overview of body temperature levels for patient 03366 through afternoon hours yesterday.
+Present heart rate trends for patient 02109 observed during the night over the past two weekends.
+Provide a comprehensive summary of body temperature for patient 08130 recorded on afternoons this month.
+What were the images captured of patient 04891 this evening, and their related moods?
+Can you display summaries of blood pressure dynamics for patient 01637 during the evenings over the past week?
+Show recorded respiratory rate of patient 01266 from 5am to 6pm over the last couple of days.
+What was the maximum respiratory rate level for patient 06087 during the last 90 nights?
+What are the most significant fluctuations in systolic pressure noted for patient 00253 during early hours this week?
+Show me the changes in body temperature of patient 03861 during the past weekday mornings.
+What has been the oxygen saturation pattern for patient 09620 every night in the past fortnight?
+Show me the list of heart rate readings for patient 09255 between 9am and 11pm over the last 4 weeks.
+Present the timeline of diastolic pressure changes for patient 00977 over last weekend mornings.
+How did patient's 09388 body temperature change during each weekend morning this year?
+Can you display the historical body temperature logs for patient 01204 during weekend days in last February?
+What was the systolic pressure pattern of patient 02381 recorded this Sunday?
+Retrieve the sequential changes in body temperature for patient 02842 on every Thursday this month.
+Show the respiratory rate readings for patient 09849 during this afternoon.
+What were the variations in heart rate for patient 09932 captured during evening hours each Monday this month?
+Can you display comprehensive blood pressure records for patient 09566 from every morning last 16 days?
+What trends in body temperature were observed for patient 01764 captured from midnight to 4am this week?
+Show the systolic pressure plot for patient 02780 documented after noon today.
+Provide the body temperature records for patient 05689 for the entire day yesterday.
+Retrieve respiratory rate for patient 02692 recorded from noon to 9pm this week.
+What was the diastolic pressure of patient 08603 every hour for the last 25 days?
+Show a progression graph of respiratory rate changes for patient 04867 during each recorded session today.
+Provide a detailed report on vital signs for patient 00408 throughout each evening this weekend.
+Can you provide a summary of systolic pressure statistics for patient 06588 from midnight to 8am?
+Retrieve all visuals with the corresponding mood annotations captured for patient 02878 today.
+Present the respiratory rate readings for patient 03954 at 3am each day from Jul 21 to Sep 18.
+What were the recorded diastolic pressure observations for patient 09320 from 2am to 4am between Dec 23 and Dec 31?
+Show the sequence of oxygen saturation recordings for patient 04451 during the afternoons between Oct 10 and Oct 12.
+Can you analyze the vital sign data collected for patient 00213 from midnight to noon today?
+What were the heart rate recorded for patient 02748 at noon from Sep 30 to Oct 31?
+Provide a summarized list of heart rate readings for patient 03134 every 30 minutes during the evening yesterday.
+Retrieve the oxygen saturation readings for patient 09446 at 30-minute intervals since midnight today.

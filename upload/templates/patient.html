@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>REMONI - My Health</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="{{ url_for('static', filename='doctor.css') }}">
+    <script src="https://cdn.socket.io/4.4.1/socket.io.min.js"></script>
+    <style>
+        .edge-ip-display {
+            margin-left: auto;
+            background: rgba(255,255,255,0.15);
+            color: white;
+            padding: 6px 10px;
+            border-radius: 10px;
+            font-size: 0.75rem;
+            min-width: 220px;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .edge-ip-display.disconnected {
+            background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+        }
+
+        .edge-ip-title {
+            font-weight: 700;
+            font-size: 0.8rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .edge-ip-value {
+            font-family: 'Courier New', monospace;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin: 0;
+            padding: 4px 8px;
+            background: rgba(255,255,255,0.18);
+            border-radius: 6px;
+        }
+
+        .edge-status {
+            font-size: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .status-indicator {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+
+        .status-indicator.connected {
+            background: #4ade80;
+            box-shadow: 0 0 8px #4ade80;
+            animation: pulse-green 2s ease-in-out infinite;
+        }
+
+        .status-indicator.disconnected {
+            background: #ef4444;
+            box-shadow: 0 0 8px #ef4444;
+        }
+
+        .status-text {
+            font-weight: 600;
+        }
+
+        @keyframes pulse-green {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        @media (max-width: 768px) {
+            .edge-ip-display {
+                min-width: 180px;
+                padding: 6px 8px;
+            }
+
+            .edge-ip-value {
+                font-size: 0.8rem;
+            }
+        }
+
+        .chatbox__header {
+            gap: 14px;
+        }
+    </style>
+</head>
+<body data-user-role="patient">
+
+    <div class="container">
+        <div class="chatbox">
+            <div class="chatbox__support">
+                <div class="chatbox__header">
+                    <div class="chatbox__image--header">
+                        <img class='logo' src="/static/images/nurse.png" alt="image" width="45" height="45">
+                    </div>
+                    <div class="chatbox__content--header">
+                        <h4 class="chatbox__heading--header">REMONI - My Health Assistant</h4>
+                    </div>
+                    <div class="edge-ip-display" id="edgeIpDisplay" style="display: none;">
+                        <div class="edge-ip-title">
+                            Edge Device
+                        </div>
+                        <div class="edge-ip-value" id="edgeIpValue">
+                            Loading...
+                        </div>
+                        <div class="edge-status">
+                            <div class="status-indicator" id="statusIndicator"></div>
+                            <div class="status-text" id="statusText">Checking...</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="chatbox__messages">
+                    <div></div>
+                </div>
+                <div class="chatbox__footer">
+                    <input type="text" class="text_input" placeholder="Ask about your health...">
+                    <button class="chatbox__send--footer send__button">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $SCRIPT_ROOT = {{ request.script_root|tojson }};
+
+        // ✅ GLOBAL STATE
+        let currentEdgeIp = null;
+        let currentSSID = null;
+        let lastConnectionStatus = null;
+        let socket = null;
+
+        /**
+         * ✅ SILENT: Load edge device IP without pop-ups
+         */
+        async function loadEdgeDeviceIP() {
+            try {
+                const response = await fetch('/api/edge_device_ip', {
+                    method: 'GET',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Cache-Control': 'no-cache'
+                    }
+                });
+
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}`);
+                }
+
+                const data = await response.json();
+
+                if (data.ip_address) {
+                    // ✅ Update display
+                    updateEdgeIPDisplay(
+                        data.ip_address,
+                        data.ssid,
+                        data.connected,
+                        data.vitals_age_seconds
+                    );
+
+                    // ✅ Store state (no notifications)
+                    currentEdgeIp = data.ip_address;
+                    currentSSID = data.ssid;
+                    lastConnectionStatus = data.connected;
+                } else {
+                    updateEdgeIPDisplay(null, 'Unknown', false, null);
+                }
+            } catch (error) {
+                console.error('Error loading edge IP:', error);
+                updateEdgeIPDisplay(null, 'Error', false, null);
+            }
+        }
+
+        /**
+         * ✅ CLEAN: Update display without confusing indicators
+         */
+        function updateEdgeIPDisplay(ip, ssid, connected, vitals_age_seconds) {
+            const display = document.getElementById('edgeIpDisplay');
+            const ipValue = document.getElementById('edgeIpValue');
+            const indicator = document.getElementById('statusIndicator');
+            const statusText = document.getElementById('statusText');
+
+            if (ip) {
+                // Show IP address
+                let displayText = `IP: ${ip}`;
+                if (ssid && ssid !== 'Unknown') {
+                    displayText += `\nWiFi: ${ssid}`;
+                }
+                ipValue.textContent = displayText;
+
+                // ✅ CLEAR STATUS INDICATORS
+                if (connected) {
+                    // Connected - green pulsing
+                    indicator.className = 'status-indicator connected';
+                    statusText.textContent = 'Connected';
+                    display.className = 'edge-ip-display';
+                } else {
+                    // Disconnected - red solid
+                    indicator.className = 'status-indicator disconnected';
+
+                    // Show how long disconnected
+                    if (vitals_age_seconds !== null && vitals_age_seconds !== undefined) {
+                        const hours = Math.floor(vitals_age_seconds / 3600);
+                        const minutes = Math.floor((vitals_age_seconds % 3600) / 60);
+
+                        if (hours > 0) {
+                            statusText.textContent = `Disconnected (${hours}h ago)`;
+                        } else if (minutes > 0) {
+                            statusText.textContent = `Disconnected (${minutes}m ago)`;
+                        } else {
+                            statusText.textContent = 'Disconnected';
+                        }
+                    } else {
+                        statusText.textContent = 'Disconnected';
+                    }
+
+                    display.className = 'edge-ip-display disconnected';
+                }
+
+                display.style.display = 'block';
+            } else {
+                ipValue.textContent = 'No device found';
+                indicator.className = 'status-indicator disconnected';
+                statusText.textContent = 'Not Connected';
+                display.className = 'edge-ip-display disconnected';
+                display.style.display = 'block';
+            }
+        }
+
+        /**
+         * ✅ Initialize SocketIO for real-time updates (silent)
+         */
+        function initializeSocketIO() {
+            try {
+                socket = io({
+                    transports: ['websocket', 'polling'],
+                    reconnection: true,
+                    reconnectionDelay: 1000,
+                    reconnectionAttempts: 5
+                });
+
+                socket.on('connect', () => {
+                    console.log('SocketIO connected');
+                });
+
+                // ✅ Listen for WiFi changes (silent refresh)
+                socket.on('wifi_changed', (data) => {
+                    if (data.for_role === 'patient') {
+                        loadEdgeDeviceIP();
+                    }
+                });
+
+                // ✅ Listen for vitals updates (silent refresh)
+                socket.on('vitals_update', (data) => {
+                    loadEdgeDeviceIP();
+                });
+
+            } catch (error) {
+                console.error('SocketIO error:', error);
+            }
+        }
+
+        /**
+         * ✅ Initialize on page load
+         */
+        window.addEventListener('load', async () => {
+            await loadEdgeDeviceIP();
+            initializeSocketIO();
+        });
+
+        /**
+         * ✅ Poll every 5 seconds (silent)
+         */
+        setInterval(loadEdgeDeviceIP, 5000);
+
+        /**
+         * ✅ Delete account function
+         */
+        async function deleteAccount() {
+            const password = prompt('⚠️ WARNING: This will permanently delete your account and all data!\n\nEnter your password to confirm:');
+
+            if (!password) {
+                return;
+            }
+
+            if (!confirm('Are you absolutely sure? This action CANNOT be undone!')) {
+                return;
+            }
+
+            try {
+                const response = await fetch('/delete_account', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ password })
+                });
+
+                const data = await response.json();
+
+                if (data.success) {
+                    alert('✅ Account deleted successfully. You will now be logged out.');
+                    window.location.href = '/login';
+                } else {
+                    alert('❌ ' + (data.message || 'Account deletion failed'));
+                }
+            } catch (error) {
+                alert('❌ Error deleting account. Please try again.');
+                console.error(error);
+            }
+        }
+    </script>
+    <script type="text/javascript" src="{{ url_for('static', filename='doctor.js') }}"></script>
+</body>
+</html>

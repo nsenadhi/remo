@@ -1,0 +1,200 @@
+1. Give me the current <vital_sign> of the patient <patient_id>.
+2. Provide me the <vital_sign> and <vital_sign> of the patient <patient_id> in the last <num_day> days.
+3. Show me the current image of the patient <patient_id>.
+4. What is the patient <patient_id> doing and what is the patient's mood at <time>pm?
+5. Give me plots of patient <patient_id> <vital_sign> and <vital_sign> from <time>am to <time>pm.
+6. What was the <vital_sign> for patient <patient_id> yesterday at <time>am?
+7. Retrieve the <vital_sign> data of patient <patient_id> between <date1> and <date2>.
+8. Can I have the <vital_sign> readings for patient <patient_id> over the last <num_hour> hours?
+9. Display the historical data for <vital_sign> of patient <patient_id> for the past <num_day> days.
+10. Show me the patient's <vital_sign> recorded at each 30-min interval from 9am to 5pm today.
+11. What was the <vital_sign> of patient <patient_id> last week?
+12. Provide the activity of patient <patient_id> during <time>pm on <date>.
+13. What was the mood of patient <patient_id> captured at this time yesterday?
+14. Can you show me the trend of <vital_sign> for patient <patient_id> since last Monday?
+15. Retrieve patient's <patient_id> <vital_sign> and <vital_sign> recorded on <date>.
+16. How has the <vital_sign> of patient <patient_id> changed in the last <num_day>?
+17. Provide all images taken of patient <patient_id> over the past <num_day> days.
+18. Give me the readings of <vital_sign> and <vital_sign> for patient <patient_id> at every hour today.
+19. Show me the <vital_sign> levels for patient <patient_id> today at intervals of 30 minutes.
+20. What were the recorded <vital_sign> values of patient <patient_id> yesterday morning?
+21. Can I have the <vital_sign> of patient <patient_id> from <time>am to now?
+22. Provide the visual data for patient <patient_id> at <time>pm.
+23. What images were taken of patient <patient_id> on <date>?
+24. Retrieve the last recorded emotion of patient <patient_id> during today's session.
+25. What is the historical pattern for patient <patient_id>'s <vital_sign> over the last <num_day> days?
+26. Show me the logs of activity for patient <patient_id> captured in the afternoon today.
+27. What were the patient's <vital_sign> and <vital_sign> recorded at this time on each of the past two days?
+28. Provide the <vital_sign> variability for patient <patient_id> within the last <num_hour> hours.
+29. How does patient <patient_id>'s <vital_sign> vary over the last <num_week> weeks?
+30. When was the last recorded activity for patient <patient_id>?
+31. What is the pattern in <vital_sign> readings for patient <patient_id> this week?
+32. Display the sequence of images for patient <patient_id> since yesterday.
+33. Can you retrieve the historical data on <vital_sign> and <vital_sign> of patient <patient_id> for <num_month> months ago?
+34. Provide a summary of patient <patient_id>'s <vital_sign> recorded in the morning today.
+35. Show me patient <patient_id>'s <vital_sign> and <vital_sign> rates from <num_week> weeks ago.
+36. Give an analysis of <vital_sign> recorded for patient <patient_id> in the last <num_day> days.
+37. Display the <vital_sign> values recorded for patient <patient_id> during last night.
+38. What was the latest image captured for patient <patient_id> today?
+39. Retrieve the <vital_sign> of patient <patient_id> every 30 minutes for the previous day.
+40. Can I get a detailed report of patient <patient_id>'s <vital_sign> values on the weekend?
+41. Can you show me patient <patient_id>'s <vital_sign> trend over the last <num_week> weeks?
+42. Provide the sequence of activities for patient <patient_id> between noon and midnight yesterday.
+43. What were the <vital_sign> levels of patient <patient_id> at the start of each hour today?
+44. Can you give me a summary of <vital_sign> recorded for patient <patient_id> in the evening yesterday?
+45. Show me historical data of <vital_sign> for patient <patient_id> on each Friday of October.
+46. Present patient <patient_id>'s <vital_sign> data for the last Saturday.
+47. Provide a timeline of recorded activities and moods for patient <patient_id> on <date>.
+48. Can I have the <vital_sign> values at every <num_minute> interval for patient <patient_id> on <date>?
+49. Retrieve the set of images captured after 5 pm for patient <patient_id> today.
+50. Show me the patient's <vital_sign> deviation for each day over the past week.
+51. What was the peak <vital_sign> recorded for patient <patient_id> since this morning?
+52. Can you provide the <vital_sign> logs for patient <patient_id> over the past <num_hour> hours?
+53. Show me the <vital_sign> and <vital_sign> graphs for patient <patient_id> from the afternoon of <date>.
+54. Retrieve the sequence of recorded <vital_sign> data for patient <patient_id> from last night.
+55. What was the activity of patient <patient_id> documented at midnight?
+56. Provide the <vital_sign> levels of patient <patient_id> available for this week.
+57. Can you give me the current <vital_sign> trend for patient <patient_id> over the last <num_minute> minutes?
+58. Show a timeline of patient <patient_id>'s <vital_sign> recorded every hour today.
+59. How has the <vital_sign> of patient <patient_id> fluctuated from <time>am onwards?
+60. What emotions have been captured for patient <patient_id> in the last six hours?
+61. Provide images of patient <patient_id> from yesterday evening.
+62. Can I view the pattern in patient <patient_id>'s <vital_sign> readings every two hours this month?
+63. Retrieve all <vital_sign> logged in for patient <patient_id> for the past fortnight.
+64. What <vital_sign> data was recorded for patient <patient_id> from noon to <time>pm over the last weekend?
+65. Provide a detailed list of <vital_sign> and <vital_sign> readings for patient <patient_id> by the hour for the last <num_day> days.
+66. Show data on <vital_sign> recorded for patient <patient_id> on each day of this past week.
+67. What was the <vital_sign> trend for patient <patient_id> at the start of each hour today?
+68. Can you summarize the <vital_sign> trend for patient <patient_id> over the past <num_month> months?
+69. What are the recorded activities today for patient <patient_id> by the hour?
+70. Provide records of <vital_sign> fluctuations for patient <patient_id> this morning.
+71. Give me a breakdown of patient <patient_id>'s <vital_sign> fluctuations for each day last week.
+72. What was the average <vital_sign> of patient <patient_id> in the early morning?
+73. Retrieve the <vital_sign> for patient <patient_id> from noon.
+74. Can I have a summary of captured images for patient <patient_id> over the last <num_minute> minutes?
+75. Show the progress in <vital_sign> for patient <patient_id> compared from two weeks ago to now.
+76. What are the common activities recorded for patient <patient_id> this past month?
+77. Provide detailed <vital_sign> statistics for patient <patient_id> every <num_hour> hours for the entire day.
+78. What were the top emotions captured for patient <patient_id> during late hours last night?
+79. Display images for patient <patient_id> during yesterday's evening.
+80. Can you map out the <vital_sign> changes for patient <patient_id> from <time>pm to <time>pm two days ago?
+81. How has the <vital_sign> for patient <patient_id> varied today?
+82. Provide a summary of recorded <vital_sign> and associated timestamps for patient <patient_id> since midnight.
+83. What are the variations noted in patient <patient_id>'s <vital_sign> yesterday morning?
+84. Retrieve the list of moods shared for patient <patient_id> in the night on <date>.
+85. What is the daily average <vital_sign> for patient <patient_id> during the past week?
+86. Show data on patient <patient_id>'s <vital_sign> at midday, recorded every day this month.
+87. Present the <vital_sign> variation for patient <patient_id> every 30 minutes since <time>am.
+88. Provide a chronological list of <vital_sign> for patient <patient_id> from last evening.
+89. What was the pattern of patient <patient_id>'s <vital_sign> this noon?
+90. Can I have the image data of different moods captured for patient <patient_id> since <time>am today?
+91. What are the consistent <vital_sign> noted for patient <patient_id> every <time>am this week?
+92. Retrieve the succession of <vital_sign> data for patient <patient_id> since sunrise.
+93. Provide an account of <vital_sign> readings for patient <patient_id> the past <num_day> days.
+94. Show historical data showing the evening <vital_sign> pattern of patient <patient_id>.
+95. What activities were recorded for patient <patient_id> at <time>pm on <date>?
+96. Can you analyze the variations in <vital_sign> for patient <patient_id> since the weekend?
+97. Show the day's emotional progression and activities of patient <patient_id> from <time>am to <time>pm.
+98. Provide a report on the highest recorded <vital_sign> for patient <patient_id> for each day last month.
+99. What was the recorded <vital_sign> for patient <patient_id> at <time>pm?
+100. Retrieve the <vital_sign> data for patient <patient_id> since <time>am.
+101. Can I have a detailed list of <vital_sign> observations for patient <patient_id> covering all night hours last <num_day> days?
+102. Show me all <vital_sign> readings for patient <patient_id> at 30-minute intervals over last weekend.
+103. What were the <vital_sign> levels of patient <patient_id> during Monday mornings in the past month?
+104. Provide data on how patient <patient_id>'s <vital_sign> varied on evenings last week from <time>pm to midnight.
+105. Can you retrieve the sequence of patient <patient_id>'s <vital_sign> throughout the afternoon?
+106. Give me the current <vital_sign> of the patient <patient_id>.
+107. Provide me the current <vital_sign> of the patient <patient_id>.
+108. Please provide a detailed summary of patient <patient_id>'s <vital_sign> data over the past <num_hour> hours.
+109. What images and associated emotions were captured for patient <patient_id> on <date>?
+110. Retrieve all the <vital_sign> and <vital_sign> variations for patient <patient_id> for the past <num_day> days.
+111. Can you provide the <vital_sign> trend of patient <patient_id> from <time>am to <time>am each day this week?
+112. How did <vital_sign> levels for patient <patient_id> change at every recorded instance yesterday?
+113. Present the sequence of recorded <vital_sign> for patient <patient_id> from midnight to morning.
+114. What were patient <patient_id>'s <vital_sign> patterns in the evening over the last <num_day> days?
+115. Show me images from patient <patient_id> taken over the previous weekend.
+116. Provide a summary of <vital_sign> data for patient <patient_id> logged in the morning.
+117. Can you explore the trends in <vital_sign> and <vital_sign> for patient <patient_id> post-afternoon meals this week?
+118. Retrieve mood dynamics captured for patient <patient_id> from morning till evening the day before yesterday.
+119. What has been the hourly change in patient <patient_id>'s <vital_sign> since <date>?
+120. Show the changes in <vital_sign> of patient <patient_id> from <time>pm to <time>pm.
+121. Provide the list of <vital_sign> readings for patient <patient_id> from <time>am today.
+122. What <vital_sign> were documented for patient <patient_id> at midnight over the past week?
+123. Can you give a detailed list of <vital_sign> readings for patient <patient_id> at dawn each day for the past fortnight?
+124. What was the body's overall temperature pattern for patient <patient_id> over lunch time yesterday?
+125. Retrieve the <vital_sign> recordings for patient <patient_id> on each Sunday evening in the last <num_month> months.
+126. Show trends in <vital_sign> for patient <patient_id> from the morning up to noon.
+127. How did r<vital_sign> for patient <patient_id> fluctuate past midnight today?
+128. Provide collected <vital_sign> data of patient <patient_id> captured at 30-minute intervals yesterday.
+129. What were the moods of patient <patient_id> from <time> AM to <time> AM each day this week?
+130. Can I have a summary of <vital_sign> recorded for patient <patient_id> every hour last Sunday?
+131. Retrieve the <vital_sign> of patient <patient_id> measured hourly since last Monday.
+132. How did patient <patient_id>'s morning emotions differ from each other for the past two days?
+133. What are the most significant variations in <vital_sign> for patient <patient_id> over every half-hour today?
+134. Provide insights into patient <patient_id>'s <vital_sign> deviations recorded at noon time over the past month.
+135. Show me the <vital_sign> values for patient <patient_id> captured every two hours over the last weekend.
+136. Can you retrieve the complete list of <vital_sign> of patient <patient_id> on every day of last week?
+137. What were the trends in <vital_sign> for patient <patient_id> since last Thursday afternoon up to now?
+138. Provide a summary of <vital_sign> changes for patient <patient_id> during mornings over the past <num_week> weeks.
+139. What was the pattern and progression of mood states for patient <patient_id> yesterday?
+140. Show sequential <vital_sign> data for patient <patient_id> every hour during today.
+141. Can you give me a detailed summary of <vital_sign> and <vital_sign> for patient <patient_id> since the beginning of this year?
+142. Retrieve the <vital_sign> readings for patient <patient_id> from this morning till the current time.
+143. What are the hourly records for <vital_sign> of patient <patient_id> today?
+144. Please provide the <vital_sign> readings for patient <patient_id> captured at <time>am daily throughout this week.
+145. Show the <vital_sign> recorded daily for patient <patient_id> each afternoon during last October.
+146. What were the <vital_sign> fluctuations for patient <patient_id> during last Saturday?
+147. Can you provide an analysis of <vital_sign> changes for patient <patient_id> throughout various weekends this month?
+148. What differences in <vital_sign> were noted for patient <patient_id> from <time>pm to <time>pm for the past three days?
+149. Retrieve the hourly sequence of <vital_sign> and <vital_sign> readings for patient <patient_id> from last Tuesday.
+150. How has patient <patient_id>'s <vital_sign> varied over the past week?
+151. Show me the daily <vital_sign> averages for patient <patient_id> for the last <num_day> mornings.
+152. Provide all images recorded and their associated emotions for patient <patient_id> from last night.
+153. What were the recorded <vital_sign> for patient <patient_id> each hour during the last Monday?
+154. Can you summarize the variations in <vital_sign> for patient <patient_id> during afternoons this week?
+155. Retrieve images and recorded <vital_sign> for patient <patient_id> between <time>am and <time>pm today.
+156. Provide a breakdown of <vital_sign> readings for patient <patient_id> before noon today.
+157. What was the <vital_sign> pattern for patient <patient_id> from <time>am to <time>am on the first Monday of this month?
+158. What is the current <vital_sign> of the patient <patient_id>?
+159. Can you display the detailed <vital_sign> pattern of patient <patient_id> for the last <num_hour> hours?
+160. How has the <vital_sign> of patient <patient_id> changed during evenings in the last month?
+161. Retrieve recorded changes in <vital_sign> for patient <patient_id> since today's morning.
+162. Provide all recorded visuals with detailed annotations for patient <patient_id> during the morning session.
+163. What were the trends in <vital_sign> for patient <patient_id> during the evenings over the last <num_day> days?
+164. Can you suggest patterns in <vital_sign> for patient <patient_id> captured every sunrise last week?
+165. Show me the list of documented <vital_sign> data for patient <patient_id> at noon each day this month.
+166. Retrieve an overview of <vital_sign> levels for patient <patient_id> through afternoon hours yesterday.
+167. Present <vital_sign> trends for patient <patient_id> observed during the night over the past two weekends.
+168. Provide a comprehensive summary of <vital_sign> for patient <patient_id> recorded on afternoons this month.
+169. What were the images captured of patient <patient_id> this evening, and their related moods?
+170. Can you display summaries of <vital_sign> dynamics for patient <patient_id> during the evenings over the past week?
+171. Show recorded <vital_sign> of patient <patient_id> from <time>am to <time>pm over the last couple of days.
+172. What was the maximum <vital_sign> level for patient <patient_id> during the last <num_day> nights?
+173. What are the most significant fluctuations in <vital_sign> noted for patient <patient_id> during early hours this week?
+174. Show me the changes in <vital_sign> of patient <patient_id> during the past weekday mornings.
+175. What has been the <vital_sign> pattern for patient <patient_id> every night in the past fortnight?
+176. Show me the list of <vital_sign> readings for patient <patient_id> between <time>am and <time>pm over the last <num_week> weeks.
+226. Present the timeline of <vital_sign> changes for patient <patient_id> over last weekend mornings.  
+178. How did patient's <patient_id> <vital_sign> change during each weekend morning this year?
+179. Can you display the historical <vital_sign> logs for patient <patient_id> during weekend days in last February?  
+180. What was the <vital_sign> pattern of patient <patient_id> recorded this Sunday?
+181. Retrieve the sequential changes in <vital_sign> for patient <patient_id> on every Thursday this month.
+182. Show the <vital_sign> readings for patient <patient_id> during this afternoon.
+183. What were the variations in <vital_sign> for patient <patient_id> captured during evening hours each Monday this month?
+184. Can you display comprehensive <vital_sign> records for patient <patient_id> from every morning last <num_day> days?
+185. What trends in <vital_sign> were observed for patient <patient_id> captured from midnight to <time>am this week?
+186. Show the <vital_sign> plot for patient <patient_id> documented after noon today.
+187. Provide the <vital_sign> records for patient <patient_id> for the entire day yesterday.
+188. Retrieve <vital_sign> for patient <patient_id> recorded from noon to <time>pm this week.
+189. What was the <vital_sign> of patient <patient_id> every hour for the last <num_day> days?
+190. Show a progression graph of <vital_sign> changes for patient <patient_id> during each recorded session today.
+191. Provide a detailed report on vital signs for patient <patient_id> throughout each evening this weekend.
+192. Can you provide a summary of <vital_sign> statistics for patient <patient_id> from midnight to <time>am?
+193. Retrieve all visuals with the corresponding mood annotations captured for patient <patient_id> today.
+194. Present the <vital_sign> readings for patient <patient_id> at <time>am each day from <date1> to <date2>.
+195. What were the recorded <vital_sign> observations for patient <patient_id> from <time>am to <time>am between <date1> and <date2>?
+196. Show the sequence of <vital_sign> recordings for patient <patient_id> during the afternoons between <date1> and <date2>.
+197. Can you analyze the vital sign data collected for patient <patient_id> from midnight to noon today?
+198. What were the <vital_sign> recorded for patient <patient_id> at noon from <date1> to <date2>?
+199. Provide a summarized list of <vital_sign> readings for patient <patient_id> every 30 minutes during the evening yesterday.
+200. Retrieve the <vital_sign> readings for patient <patient_id> at 30-minute intervals since midnight today.

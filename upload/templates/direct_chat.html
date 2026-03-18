@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Direct Chat</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/direct_chat.css') }}" />
+</head>
+<body data-role="{{ role }}" data-patient-id="{{ patient_id }}">
+  <div class="direct-shell">
+    <header class="direct-header">
+      <div class="direct-title">Direct Chat</div>
+      <div class="direct-actions">
+      </div>
+    </header>
+
+    <main class="direct-body">
+      <div id="directMessages" class="direct-messages"></div>
+    </main>
+
+    <footer class="direct-footer">
+      <input id="directInput" type="text" placeholder="Type a message" />
+      <button id="directSend" class="send">Send</button>
+    </footer>
+  </div>
+
+  <script src="{{ url_for('static', filename='js/direct_chat.js') }}"></script>
+</body>
+</html>
