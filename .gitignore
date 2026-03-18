@@ -1,6 +1,7 @@
 .env
 .env.*
 !.env.example
+.git.bad-history-backup/
 .venv/
 venv/
 .idea/
